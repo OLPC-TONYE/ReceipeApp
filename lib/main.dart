@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import 'package:receipeapp/screens/home/home_screen.dart';
 
 void main() => runApp(MyApp());
@@ -8,27 +10,23 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
-      debugShowCheckedModeBanner: false,
-      title: 'ReceipeApp',
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-        primarySwatch: Colors.red,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          elevation: 0,
+        // Application name
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white,
+          primarySwatch: Colors.red,
         ),
-        body: 
-          Row(
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text('title'),
+          ),
+          body: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-                Text("FlutLab is on your service!"),
-                Icon(Icons.mood),
+              FaIcon(FontAwesomeIcons.home),
+              Icon(Icons.mood),
             ],
-          ), 
-        ),
-      ),
-    );
+          ),
+        ));
   }
 }
