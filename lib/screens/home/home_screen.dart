@@ -33,24 +33,4 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-class UserAccountHeader extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          FaIcon(FontAwesomeIcons.user),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[
-              Text(
-                "User: Charlie",
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
+
