@@ -25,6 +25,10 @@ class MyApp extends StatelessWidget {
               Container(
                 padding: EdgeInsets.only(left: 35, right: 35),
                 decoration: BoxDecoration(
+                  boxshadow: BoxShadow(
+                    color: Colors.blueAccent,
+                    offset: Offset.scale(10, 10),
+                  ),
                   border: Border(
                     top: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
                     left: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
