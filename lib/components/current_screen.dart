@@ -20,9 +20,9 @@ class _CurrentScreenState extends State<CurrentScreen> {
   }
 
   void Home() {
-    setState() {
+    setState(() {
       this.Screen = HomeScreen();
-    }
+    });
   }
 
   @override
