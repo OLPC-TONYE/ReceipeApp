@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               CurrentScreen(),
-              Padding(
+              Container(
                 padding: EdgeInsets.only(left: 35, right: 35),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
