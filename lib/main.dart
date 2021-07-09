@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
                   boxShadow: [
                     BoxShadow(
                       color: Colors.blueAccent,
-                      offset: Offset.scale(10, 10),
+                      offset: Offset(10, 10),
                     )
                   ],
                   border: Border(
