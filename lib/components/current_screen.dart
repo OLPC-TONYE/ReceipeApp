@@ -16,16 +16,11 @@ class _CurrentScreenState extends State<CurrentScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('title'),
-      ),
-      body: Center(
-        child: Text(
-          'Text',
-        ),
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16.0),
+        color: Colors.green,
       ),
     );
-    ;
   }
 }
