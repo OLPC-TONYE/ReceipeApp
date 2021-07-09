@@ -21,7 +21,8 @@ class MyApp extends StatelessWidget {
             title: Text('title'),
           ),
           body: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
               FaIcon(FontAwesomeIcons.home),
               Icon(Icons.mood),
