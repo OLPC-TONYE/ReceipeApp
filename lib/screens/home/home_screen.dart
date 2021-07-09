@@ -4,13 +4,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
 class HomeScreen extends StatelessWidget {
-  void initializeFlutterFire() async {
-    try {
-      // Wait for Firebase to initialize and set `_initialized` state to true
-      await Firebase.initializeApp();
-    } catch (e) {
-      print(e);
-    }
+  Future<void> initializeDefault() async {
+    FirebaseApp app = await Firebase.initializeApp();
+    assert(app != null);
+    print('Initialized default app $app');
   }
 
   firebase_storage.FirebaseStorage storage = firebase_storage.FirebaseStorage.instance;
@@ -25,7 +22,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    initializeFlutterFire();
+    initializeDefault();
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height * 0.87,
