@@ -19,12 +19,12 @@ class Body extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Container(
       child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                  Text("FlutLab is on your service!"),
-                  Icon(Icons.mood),
-              ],
-            ),
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+            Text("FlutLab is on your service!"),
+            Icon(Icons.mood),
+        ],
+      ),
     );
   }
 }
