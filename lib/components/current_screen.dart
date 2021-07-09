@@ -5,7 +5,7 @@ class CurrentScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      BottomAppBar(
+      body: BottomAppBar(
         color: Colors.orangeAccent,
         shape: CircularNotchedRectangle(),
       ),
