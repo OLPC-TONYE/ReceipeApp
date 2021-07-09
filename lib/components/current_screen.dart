@@ -4,6 +4,11 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class CurrentScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      BottomAppBar(
+        color: Colors.orangeAccent,
+        shape: CircularNotchedRectangle(),
+      ),
+    );
   }
 }
