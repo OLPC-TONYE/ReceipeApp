@@ -27,15 +27,6 @@ class _CurrentScreenState extends State<CurrentScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('title'),
-      ),
-      body: Center(
-        child: Text(
-          'Text',
-        ),
-      ),
-    );
+    return this.Screen;
   }
 }
