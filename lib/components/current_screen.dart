@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import 'package:firebase_core/firebase_core.dart' as Firebase;
+import 'package:firebase_core/firebase_core.dart' as firebase;
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
 import 'package:receipeapp/screens/home/home_screen.dart';
@@ -32,7 +32,7 @@ class _CurrentScreenState extends State<CurrentScreen> {
   void initializeFlutterFire() async {
     try {
       // Wait for Firebase to initialize and set `_initialized` state to true
-      await Firebase.initializeApp();
+      await firebase.initializeApp();
       setState(() {
         _initialized = true;
       });
