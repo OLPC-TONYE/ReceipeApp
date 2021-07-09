@@ -23,7 +23,7 @@ class _CurrentScreenState extends State<CurrentScreen> {
         color: Colors.green,
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Text("FlutLab is on your service!"),
           Icon(Icons.mood),
