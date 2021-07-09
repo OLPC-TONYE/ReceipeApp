@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
                 width: double.infinity,
                 padding: EdgeInsets.only(left: 20, right: 20),
                 margin: EdgeInsets.only(
-                  top: 100,
+                  top: 10,
                 ),
                 decoration: BoxDecoration(
                   color: Colors.white,
