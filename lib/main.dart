@@ -45,9 +45,9 @@ class MyApp extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: <Widget>[
-                    FaIcon(FontAwesomeIcons.home, size: 40),
-                    FaIcon(FontAwesomeIcons.plus, size: 40),
-                    FaIcon(FontAwesomeIcons.heart, size: 40),
+                    FaIcon(FontAwesomeIcons.home, size: 35),
+                    FaIcon(FontAwesomeIcons.plus, size: 35),
+                    FaIcon(FontAwesomeIcons.heart, size: 35),
                   ],
                 ),
               )
