@@ -4,15 +4,16 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
 class HomeScreen extends StatelessWidget {
-
-  try {
-    await Firebase.initializeApp();
-  }catch(e){
-    print(e);
+  void initializeFlutterFire() async {
+    try {
+      // Wait for Firebase to initialize and set `_initialized` state to true
+      await Firebase.initializeApp();
+    } catch (e) {
+      print(e);
+    }
   }
-  
-  firebase_storage.FirebaseStorage storage = firebase_storage.FirebaseStorage.instance;
 
+  firebase_storage.FirebaseStorage storage = firebase_storage.FirebaseStorage.instance;
   firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance.ref().child('assets').child('images').child('ff47aa505d388c4436579121b38e32ab.jpg');
 
   Future<void> downloadURLExample() async {
