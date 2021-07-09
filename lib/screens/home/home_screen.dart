@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
         child: Stack(children: <Widget>[
           Icon(Icons.menu),
           Positioned(
-            right: 20.0,
+            right: 10.0,
             child: Container(
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
