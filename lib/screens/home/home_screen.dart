@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Stack(children: <Widget>[
-            Positioned(left: Icons.menu)
+            Positioned(left: 20, child: Icons.menu),
           ])
         ],
       ),
