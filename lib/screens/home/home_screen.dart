@@ -5,9 +5,9 @@ import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
 class HomeScreen extends StatelessWidget {
   String downloadURL;
-
+  FirebaseApp app;
   Future<void> initializeDefault() async {
-    FirebaseApp app = await Firebase.initializeApp();
+    app = await Firebase.initializeApp();
     assert(app != null);
     print("Getting");
     print('Initialized default app $app');
