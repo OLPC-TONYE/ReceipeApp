@@ -22,7 +22,7 @@ class _CurrentScreenState extends State<CurrentScreen> {
 
   void Home() {
     setState(() {
-      this.Screen = ReceipeScreen();
+      this.Screen = HomeScreen();
     });
   }
 
