@@ -5,23 +5,19 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height * 0.87,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16.0),
-          color: Colors.green,
-        ),
-        child: Container(
-            padding: const EdgeInsets.all(8.0),
-            height: 500.0,
-            width: 500.0,
-            child: Stack(children: <Widget>[
-              Icon(
-                Icons.mood,
-                color: Colors.red,
-                size: 30.0,
-              ),
-            ])));
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height * 0.87,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16.0),
+        color: Colors.green,
+      ),
+      child: Container(
+        padding: const EdgeInsets.all(8.0),
+        height: 500.0,
+        width: 500.0,
+        child: Stack(children: <Widget>[]),
+      ),
+    );
   }
 }
 
