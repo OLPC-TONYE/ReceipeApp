@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class CurrentScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _CurrentState();
+    return _CurrentScreenState();
   }
 }
 
