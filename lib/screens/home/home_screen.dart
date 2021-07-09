@@ -34,7 +34,7 @@ class MostViewed extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16.0),
-        color: Colors.green,
+        color: Colors.blueViolet,
       ),
     );
   }
