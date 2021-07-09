@@ -20,7 +20,6 @@ class HomeScreen extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25.0),
                 shape: BoxShape.circle,
                 color: Colors.white,
               ),
