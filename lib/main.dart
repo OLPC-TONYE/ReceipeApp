@@ -27,8 +27,10 @@ class MyApp extends StatelessWidget {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.blueAccent,
-                      offset: Offset(10, 10),
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                      offset: Offset(0, 3),
                     )
                   ],
                   border: Border(
