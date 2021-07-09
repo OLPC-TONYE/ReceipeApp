@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CurrentScreen(),
               Container(
+                width: double.infinity,
                 margin: EdgeInsets.only(
                   left: 30,
                   top: 100,
