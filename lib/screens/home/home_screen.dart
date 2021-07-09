@@ -22,27 +22,34 @@ class Body extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
             UserAccountsDrawerHeader(
-                                    accountName: Text("FlutLab User"),
-                                    accountEmail: Text("flutlab.ide@gmail.com"),
-                                    currentAccountPicture: CircleAvatar(
-                                        backgroundColor: Colors.white,
-                                        child: Text(
-                                        "F",
-                                        style: TextStyle(fontSize: 40.0),
-                                        ),
-                                    ),
-                                ),
+              accountName: Text("FlutLab User"),
+              accountEmail: Text("flutlab.ide@gmail.com"),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Colors.white,
+                child: Text(
+                "F",
+                style: TextStyle(fontSize: 40.0),
+                ),
+              ),
+            ),
+            UserAccountHeader(),
         ],
       ),
     );
   }
 }
 
-class User extends StatelessWidget {
+class UserAccountHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      
+      child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                  FaIcon(FontAwesomeIcons.user),
+                  Icon(Icons.mood),
+              ],
+            ), 
     );
   }
 }
