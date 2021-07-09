@@ -6,7 +6,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * 0.75,
+      height: MediaQuery.of(context).size.height * 0.85,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16.0),
         color: Colors.green,
