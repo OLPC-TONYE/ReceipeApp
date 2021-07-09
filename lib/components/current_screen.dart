@@ -22,8 +22,12 @@ class _CurrentScreenState extends State<CurrentScreen> {
         borderRadius: BorderRadius.circular(16.0),
         color: Colors.green,
       ),
-      child: Center(
-        child: Text('Hello'),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          Text("FlutLab is on your service!"),
+          Icon(Icons.mood),
+        ],
       ),
     );
   }
