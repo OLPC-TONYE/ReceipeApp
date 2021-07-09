@@ -15,7 +15,13 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         height: 500.0,
         width: 500.0,
-        child: Stack(children: <Widget>[]),
+        child: Stack(children: <Widget>[
+          Icon(Icons.mood),
+          Positioned(
+            left: 20.0,
+            child: Icon(Icons.mood_mad),
+          )
+        ]),
       ),
     );
   }
