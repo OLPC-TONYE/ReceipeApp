@@ -19,6 +19,7 @@ class _CurrentScreenState extends State<CurrentScreen> {
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height * 0.5,
+      mainAxisAlignment: MainAxisAlignment.start,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16.0),
         color: Colors.green,
