@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
         child: Stack(children: <Widget>[
           Icon(Icons.mood),
           Positioned(
-            left: 20.0,
+            left: 30.0,
             child: Icon(Icons.mood),
           )
         ]),
