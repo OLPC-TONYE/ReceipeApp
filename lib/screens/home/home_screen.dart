@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
           Positioned(
             right: 20.0,
             child: Container(
-              height: 200;
+              height: 200,
             ),
           )
         ]),
