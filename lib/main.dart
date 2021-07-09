@@ -45,7 +45,8 @@ class MyApp extends StatelessWidget {
                   children: <Widget>[
                     FaIcon(FontAwesomeIcons.home, size: 35),
                     FaIcon(FontAwesomeIcons.plus, size: 35),
-                    FaIcon(FontAwesomeIcons.heart, size: 35),
+                    FaIcon(FontAwesomeIcons.bookmark, size: 35),
+                    FaIcon(FontAwesomeIcons.user, size: 35),
                   ],
                 ),
               )
