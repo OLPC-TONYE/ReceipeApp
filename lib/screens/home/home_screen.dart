@@ -14,8 +14,9 @@ class HomeScreen extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(8.0),
         width: 100.0,
+        color: Colors.white,
         child: Stack(children: <Widget>[
-          FaIcon(FontAwesomeIcons.menu),
+          Icon(Icons.menu),
           Positioned(
             right: 20.0,
             child: Container(
