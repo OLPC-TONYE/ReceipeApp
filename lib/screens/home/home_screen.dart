@@ -22,6 +22,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("Hello");
     initializeDefault();
     downloadURLExample();
     return Container(
