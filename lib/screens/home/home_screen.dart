@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16.0),
                 color: Colors.white10,
               ),
-              child: Row(children: <Widget>[
+              child: Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
                 Text('Hi User,'),
               ]),
             ),
