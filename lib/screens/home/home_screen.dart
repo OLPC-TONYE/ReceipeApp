@@ -21,7 +21,8 @@ class Body extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-            FaIcon(FontAwesomeIcons.gamepad),
+            FaIcon(FontAwesomeIcons.gamepad,
+            size: 20),
         ],
       ),
     );
