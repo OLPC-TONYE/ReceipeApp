@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
             right: 20.0,
             child: Container(
               height: 20,
-              margin: EdgeInsets.all(10),
+              padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(16.0),
                 color: Colors.white10,
