@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
             width: 500.0,
             child: Stack(children: <Widget>[
               Icon(
-                Icons.favorite,
+                Icons.mood,
                 color: Colors.red,
                 size: 30.0,
               ),
