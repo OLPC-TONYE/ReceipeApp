@@ -23,7 +23,7 @@ class _CurrentScreenState extends State<CurrentScreen> {
         color: Colors.green,
       ),
       child: Center(
-        Text('Hello'),
+        child: Text('Hello'),
       ),
     );
   }
