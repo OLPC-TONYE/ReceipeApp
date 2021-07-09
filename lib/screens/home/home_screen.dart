@@ -8,7 +8,9 @@ class HomeScreen extends StatelessWidget {
 
   Future<void> initializeDefault() async {
     print("Getting");
-    await Firebase.initializeApp();
+    FirebaseApp app = await Firebase.initializeApp();
+    assert(app != null);
+    print('Initialized default app $app');
   }
 
   // firebase_storage.FirebaseStorage storage = firebase_storage.FirebaseStorage.instance;
