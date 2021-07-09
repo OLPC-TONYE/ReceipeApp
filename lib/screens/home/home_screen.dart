@@ -6,7 +6,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 1,
+        elevation: 0,
       ),
       body: Body(),
     );
@@ -19,12 +19,28 @@ class Body extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Container(
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-            FaIcon(FontAwesomeIcons.gamepad,
-            size: 40),
+        UserAccountsDrawerHeader(
+                                accountName: Text("FlutLab User"),
+                                accountEmail: Text("flutlab.ide@gmail.com"),
+                                currentAccountPicture: CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    child: Text(
+                                    "F",
+                                    style: TextStyle(fontSize: 40.0),
+                                    ),
+                                ),
+                            ),
         ],
       ),
+    );
+  }
+}
+
+class User extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      
     );
   }
 }
