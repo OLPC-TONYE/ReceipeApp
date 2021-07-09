@@ -42,7 +42,7 @@ class UserAccountHeader extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                   Text("User: Charlie"),
-                  Text.,
+                  
               ],
             ),
         ],
