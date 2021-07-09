@@ -26,6 +26,7 @@ class HomeScreen extends StatelessWidget {
               ),
               child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: <Widget>[
                 Text('Hi User,'),
+                FaIcon(FontAwesomeIcons.user),
               ]),
             ),
           )
