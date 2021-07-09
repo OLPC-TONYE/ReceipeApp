@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'package:receipeapp/screens/home/home_screen.dart';
+
 class CurrentScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -9,26 +11,20 @@ class CurrentScreen extends StatefulWidget {
 }
 
 class _CurrentScreenState extends State<CurrentScreen> {
+  var Screen;
+
   @override
   void initState() {
     super.initState();
+    this.Home();
+  }
+
+  void Home() {
+    setState() {
+      this.Screen = HomeScreen();
+    }
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(16.0),
-        color: Colors.green,
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Text("FlutLab is on your service!"),
-          Icon(Icons.mood),
-        ],
-      ),
-    );
-  }
+  Widget build(BuildContext context) {}
 }
