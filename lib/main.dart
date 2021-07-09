@@ -36,6 +36,15 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: <Widget>[
+                    FaIcon(FontAwesomeIcons.home),
+                    FaIcon(FontAwesomeIcons.plus),
+                    FaIcon(FontAwesomeIcons.heart),
+                  ],
+                ),
               )
             ],
           ),
