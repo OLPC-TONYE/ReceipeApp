@@ -7,7 +7,15 @@ class CurrentScreen extends StatefulWidget {
 }
 
 class _CurrentScreenState extends State<CurrentScreen> {
-  void initState() {}
+  @override
+  void initState() {
+    super.initState();
+    getScreen();
+  }
+
+  void getScreen() {
+    void setState() {}
+  }
 
   @override
   Widget build(BuildContext context) {
