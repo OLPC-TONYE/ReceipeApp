@@ -40,9 +40,13 @@ class MostViewed extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
-          Positioned(
-            left: 20.0,
-            child: Text("Most Viewed"),
+          Stack(
+            children: <Widget>[
+              Positioned(
+                left: 20.0,
+                child: Text("Most Viewed"),
+              ),
+            ],
           ),
           Icon(Icons.mood),
         ],
