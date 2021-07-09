@@ -10,8 +10,8 @@ class HomeScreen extends StatelessWidget {
     print('Initialized default app $app');
   }
 
-  firebase_storage.FirebaseStorage storage = firebase_storage.FirebaseStorage.instance;
-  firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance.ref().child('assets').child('images').child('ff47aa505d388c4436579121b38e32ab.jpg');
+  // firebase_storage.FirebaseStorage storage = firebase_storage.FirebaseStorage.instance;
+  // firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance.ref().child('assets').child('images').child('ff47aa505d388c4436579121b38e32ab.jpg');
 
   Future<void> downloadURLExample() async {
     String downloadURL = await firebase_storage.FirebaseStorage.instance.ref('users/123/avatar.jpg').getDownloadURL();
@@ -22,7 +22,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    initializeDefault();
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height * 0.87,
