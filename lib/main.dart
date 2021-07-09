@@ -19,10 +19,14 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           elevation: 0,
         ),
-        body: Center(
-          child: Text(
-            'Text',
-          ),
+        body: 
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+                Text("FlutLab is on your service!"),
+                Icon(Icons.mood),
+            ],
+          ), 
         ),
       ),
     );
