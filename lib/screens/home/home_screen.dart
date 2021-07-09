@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("Hello");
+    WidgetsFlutterBinding.ensureInitialized();
     initializeDefault();
     downloadURLExample();
     return Container(
