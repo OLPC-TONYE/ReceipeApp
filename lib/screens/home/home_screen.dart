@@ -18,20 +18,13 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      children: <Widget>[
-        UserAccountsDrawerHeader(
-                                accountName: Text("FlutLab User"),
-                                accountEmail: Text("flutlab.ide@gmail.com"),
-                                currentAccountPicture: CircleAvatar(
-                                    backgroundColor: Colors.white,
-                                    child: Text(
-                                    "F",
-                                    style: TextStyle(fontSize: 40.0),
-                                    ),
-                                ),
-                            ),
-        
-      ]
+      child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                  Text("FlutLab is on your service!"),
+                  Icon(Icons.mood),
+              ],
+            ),
     );
   }
 }
