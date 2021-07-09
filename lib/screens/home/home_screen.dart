@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
       ),
       child: Container(
         padding: const EdgeInsets.all(8.0),
-        height: 50.0,
+        height: 5.0,
         width: 100.0,
         color: Colors.white,
         child: Stack(children: <Widget>[
