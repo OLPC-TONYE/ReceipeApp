@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
           Icon(Icons.menu),
           Positioned(
             right: 20.0,
-            child: Icon(Icons.mood),
+            child: Icon(Icons.user),
           )
         ]),
       ),
