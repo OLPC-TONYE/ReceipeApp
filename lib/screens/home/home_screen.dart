@@ -12,8 +12,16 @@ class HomeScreen extends StatelessWidget {
         color: Colors.green,
       ),
       child: Column(
-        mainAxisSize: MainAxisSize.min,
         children: <Widget>[
+          ConstrainedBox(
+            constraints: BoxConstraints(
+              minWidth: 70,
+              minHeight: 70,
+              maxWidth: 150,
+              maxHeight: 150,
+            ),
+            child: Container(color: red, width: 100, height: 100),
+          ),
           UserAccountHeader(),
           Icon(Icons.mood),
         ],
