@@ -12,6 +12,7 @@ class HomeScreen extends StatelessWidget {
         color: Colors.green,
       ),
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           UserAccountHeader(),
           Icon(Icons.mood),
