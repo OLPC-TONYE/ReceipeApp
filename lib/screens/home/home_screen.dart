@@ -29,7 +29,7 @@ class Body extends StatelessWidget {
                                     style: TextStyle(fontSize: 40.0),
                                     ),
                                 ),
-                            ),(),
+                            ),
         
       ]
     );
