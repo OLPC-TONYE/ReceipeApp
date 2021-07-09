@@ -40,7 +40,13 @@ class MostViewed extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
-          Text("Most Viewed"),
+          Text(
+            "Most Viewed",
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
         ],
       ),
     );
