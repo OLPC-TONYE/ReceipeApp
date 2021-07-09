@@ -12,10 +12,16 @@ class HomeScreen extends StatelessWidget {
           color: Colors.green,
         ),
         child: Container(
-          padding: const EdgeInsets.all(8.0),
-          height: 500.0,
-          width: 500.0,
-        ));
+            padding: const EdgeInsets.all(8.0),
+            height: 500.0,
+            width: 500.0,
+            child: Stack(children: <Widget>[
+              Icon(
+                Icons.favorite,
+                color: Colors.red,
+                size: 30.0,
+              ),
+            ])));
   }
 }
 
