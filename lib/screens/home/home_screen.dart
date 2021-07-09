@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
           ConstrainedBox(
             constraints: BoxConstraints(
               maxWidth: 150,
-              maxHeight: 150,
+              maxHeight: 30,
             ),
             child: UserAccountHeader(),
           ),
