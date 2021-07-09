@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CurrentScreen(),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: <Widget>[
                   FaIcon(FontAwesomeIcons.home),

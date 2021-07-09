@@ -7,6 +7,10 @@ class CurrentScreen extends StatefulWidget {
 }
 
 class _CurrentScreenState extends State<CurrentScreen> {
+  Vector4 colour;
+
+  void initState() {}
+
   @override
   Widget build(BuildContext context) {
     return Container(
