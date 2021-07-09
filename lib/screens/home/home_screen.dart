@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
 
   Future<void> downloadURLExample() async {
     downloadURL = await firebase_storage.FirebaseStorage.instance.ref('assets/images/ff47aa505d388c4436579121b38e32ab.jpg').getDownloadURL();
-    print(' $downloadURL');
+    print(downloadURL);
   }
 
   @override
