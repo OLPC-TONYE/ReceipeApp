@@ -4,6 +4,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
 class HomeScreen extends StatelessWidget {
+  String downloadURL;
+
   Future<void> initializeDefault() async {
     FirebaseApp app = await Firebase.initializeApp();
     assert(app != null);
@@ -14,10 +16,8 @@ class HomeScreen extends StatelessWidget {
   // firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance.ref().child('assets').child('images').child('ff47aa505d388c4436579121b38e32ab.jpg');
 
   Future<void> downloadURLExample() async {
-    String downloadURL = await firebase_storage.FirebaseStorage.instance.ref('users/123/avatar.jpg').getDownloadURL();
+    downloadURL = await firebase_storage.FirebaseStorage.instance.ref('assets/images/ff47aa505d388c4436579121b38e32ab.jpg').getDownloadURL();
     print(downloadURL);
-    // Within your widgets:
-    // Image.network(downloadURL);
   }
 
   @override
