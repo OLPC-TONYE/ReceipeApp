@@ -45,6 +45,7 @@ class HomeScreen extends StatelessWidget {
           ),
           MostViewed(),
           Icon(Icons.mood),
+          Text(downloadURL),
         ],
       ),
     );
@@ -58,7 +59,7 @@ class MostViewed extends StatelessWidget {
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
         // image: DecorationImage(
-        //   image: AssetImage("assets/images/bulb.jpg"),
+        //   image: NetworkImage("assets/images/bulb.jpg"),
         //   fit: BoxFit.cover,
         // ),
         borderRadius: BorderRadius.circular(16.0),
