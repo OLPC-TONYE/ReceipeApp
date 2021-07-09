@@ -7,6 +7,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
+
       ),
       body: Body(),
     );
@@ -21,17 +22,6 @@ class Body extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-            UserAccountsDrawerHeader(
-              accountName: Text("FlutLab User"),
-              accountEmail: Text("flutlab.ide@gmail.com"),
-              currentAccountPicture: CircleAvatar(
-                backgroundColor: Colors.white,
-                child: Text(
-                "F",
-                style: TextStyle(fontSize: 40.0),
-                ),
-              ),
-            ),
             UserAccountHeader(),
         ],
       ),
@@ -43,13 +33,20 @@ class UserAccountHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Row(
+      child: 
+      Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+            FaIcon(FontAwesomeIcons.user),
+            Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                  FaIcon(FontAwesomeIcons.user),
-                  Icon(Icons.mood),
+                  Text("User: Charlie"),
+                  Text.,
               ],
-            ), 
+            ),
+        ],
+      ), 
     );
   }
 }
