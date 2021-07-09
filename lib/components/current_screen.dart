@@ -22,7 +22,7 @@ class _CurrentScreenState extends State<CurrentScreen> {
         borderRadius: BorderRadius.circular(16.0),
         color: Colors.green,
       ),
-      child: Expanded(
+      child: Center(
         child: Text('Hello'),
       ),
     );
