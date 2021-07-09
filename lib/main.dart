@@ -18,6 +18,9 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.red,
         ),
         home: Scaffold(
+          appBar: AppBar(
+            color: Colors.white,
+          ),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
