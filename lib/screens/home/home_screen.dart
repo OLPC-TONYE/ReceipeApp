@@ -13,6 +13,7 @@ class HomeScreen extends StatelessWidget {
     app = await Firebase.initializeApp().whenComplete(() {
       print("completed");
     });
+    assert(app != null);
     print("Getting");
     print('Initialized default app $app');
   }
