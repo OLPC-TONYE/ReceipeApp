@@ -27,6 +27,11 @@ class _CurrentScreenState extends State<CurrentScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return this.Screen;
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16.0),
+        color: Colors.green,
+      ),
+    );
   }
 }
