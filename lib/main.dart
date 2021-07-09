@@ -10,9 +10,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return MaterialApp(
         // Application name
-        Size size = MediaQuery.of(context).size;
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.white,
