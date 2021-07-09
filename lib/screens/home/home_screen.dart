@@ -11,26 +11,31 @@ class HomeScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16.0),
         color: Colors.green,
       ),
-      child: Container(
-        padding: const EdgeInsets.all(8.0),
-        child: Stack(children: <Widget>[
-          Positioned(
-            right: 10.0,
-            child: Container(
-              padding: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.white,
-              ),
-              child: Row(crossAxisAlignment: CrossAxisAlignment.end, children: <Widget>[
-                FaIcon(FontAwesomeIcons.user),
-              ]),
-            ),
-          )
-        ]),
-      ),
+      child: UserAccountHeader(),
     );
   }
 }
 
-
+class UserAccountHeader extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(8.0),
+      child: Stack(children: <Widget>[
+        Positioned(
+          right: 10.0,
+          child: Container(
+            padding: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.white,
+            ),
+            child: Row(crossAxisAlignment: CrossAxisAlignment.end, children: <Widget>[
+              FaIcon(FontAwesomeIcons.user),
+            ]),
+          ),
+        )
+      ]),
+    );
+  }
+}
