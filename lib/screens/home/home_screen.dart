@@ -14,7 +14,6 @@ class HomeScreen extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(8.0),
         child: Stack(children: <Widget>[
-          Icon(Icons.menu),
           Positioned(
             right: 10.0,
             child: Container(
@@ -24,6 +23,7 @@ class HomeScreen extends StatelessWidget {
                 color: Colors.white,
               ),
               child: Row(crossAxisAlignment: CrossAxisAlignment.end, children: <Widget>[
+                Text('Hi User'),
                 FaIcon(FontAwesomeIcons.user),
               ]),
             ),
