@@ -36,6 +36,7 @@ class MostViewed extends StatelessWidget {
         borderRadius: BorderRadius.circular(16.0),
         color: Colors.blue,
       ),
+      child: Text('Egusi,'),
     );
   }
 }
