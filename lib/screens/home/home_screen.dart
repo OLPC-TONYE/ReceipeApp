@@ -14,8 +14,9 @@ class HomeScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          Text("FlutLab is on your service!"),
-          Icon(Icons.mood),
+          Stack(children: <Widget>[
+            Positioned(left: Icons.menu)
+          ])
         ],
       ),
     );
