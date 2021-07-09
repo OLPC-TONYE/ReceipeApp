@@ -20,13 +20,18 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('title'),
           ),
-          body: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.end,
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              FaIcon(FontAwesomeIcons.home),
-              FaIcon(FontAwesomeIcons.plus),
-              FaIcon(FontAwesomeIcons.heart),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: <Widget>[
+                  FaIcon(FontAwesomeIcons.home),
+                  FaIcon(FontAwesomeIcons.plus),
+                  FaIcon(FontAwesomeIcons.heart),
+                ],
+              ),
             ],
           ),
         ));
