@@ -28,10 +28,8 @@ class MyApp extends StatelessWidget {
               Padding(
                   padding: EdgeInsets.only(left: 35, right: 35),
                   child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(16.0),
-                      color: Colors.green,
-                      child: Row(
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(16.0), color: Colors.green, children: <Widget>[
+                      Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: <Widget>[
@@ -40,7 +38,7 @@ class MyApp extends StatelessWidget {
                           FaIcon(FontAwesomeIcons.heart),
                         ],
                       ),
-                    ),
+                    ]),
                   )),
             ],
           ),
