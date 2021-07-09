@@ -12,9 +12,8 @@ class HomeScreen extends StatelessWidget {
         color: Colors.green,
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
-          Text("FlutLab is on your service!"),
+          UserAccountHeader(),
           Icon(Icons.mood),
         ],
       ),
