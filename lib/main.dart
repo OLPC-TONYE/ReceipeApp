@@ -15,8 +15,16 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         primarySwatch: Colors.red,
       ),
-      home: HomeScreen(),
-      
+      home: Scaffold(
+        appBar: AppBar(
+          elevation: 0,
+        ),
+        body: Center(
+          child: Text(
+            'Text',
+          ),
+        ),
+      ),
     );
   }
 }

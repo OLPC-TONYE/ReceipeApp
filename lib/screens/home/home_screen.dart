@@ -41,7 +41,7 @@ class UserAccountHeader extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                  Text("User: Charlie"),
+                  Text("User: Charlie",),
                   
               ],
             ),
