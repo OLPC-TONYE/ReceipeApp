@@ -20,8 +20,21 @@ class HomeScreen extends StatelessWidget {
             ),
             child: UserAccountHeader(),
           ),
+          MostViewed(),
           Icon(Icons.mood),
         ],
+      ),
+    );
+  }
+}
+
+class MostViewed extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16.0),
+        color: Colors.green,
       ),
     );
   }
