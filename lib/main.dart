@@ -26,17 +26,22 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CurrentScreen(),
               Padding(
-                padding: EdgeInsets.only(left: 35, right: 35),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: <Widget>[
-                    FaIcon(FontAwesomeIcons.home),
-                    FaIcon(FontAwesomeIcons.plus),
-                    FaIcon(FontAwesomeIcons.heart),
-                  ],
-                ),
-              ),
+                  padding: EdgeInsets.only(left: 35, right: 35),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16.0),
+                      color: Colors.green,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: <Widget>[
+                          FaIcon(FontAwesomeIcons.home),
+                          FaIcon(FontAwesomeIcons.plus),
+                          FaIcon(FontAwesomeIcons.heart),
+                        ],
+                      ),
+                    ),
+                  )),
             ],
           ),
         ));
