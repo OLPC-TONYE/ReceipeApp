@@ -11,7 +11,13 @@ class HomeScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16.0),
         color: Colors.green,
       ),
-      child: UserAccountHeader(),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          Text("FlutLab is on your service!"),
+          Icon(Icons.mood),
+        ],
+      ),
     );
   }
 }
