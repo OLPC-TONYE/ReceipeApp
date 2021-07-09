@@ -21,8 +21,7 @@ class Body extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-            Text("FlutLab is on your service!"),
-            Icon(Icons.mood),
+            FaIcon(FontAwesomeIcons.gamepad),
         ],
       ),
     );
