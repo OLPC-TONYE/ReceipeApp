@@ -24,8 +24,11 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CurrentScreen(),
               Container(
-                width: size.width,
-                margin: EdgeInsets.only(left: 30, top: 100, right: 30, bottom: 50),
+                margin: EdgeInsets.only(
+                  left: 30,
+                  top: 100,
+                  right: 30,
+                ),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10), bottomLeft: Radius.circular(10), bottomRight: Radius.circular(10)),
