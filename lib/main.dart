@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
               CurrentScreen(),
               Container(
                 padding: EdgeInsets.only(left: 35, right: 35),
-                decoration: BoxDecoration(border: Border.all(color: Color(0xffD4D4D4), width: 10.0)),
+                decoration: BoxDecoration(border: Border.all(color: Color(0xffD4D4D4), width: 5.0)),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.end,
