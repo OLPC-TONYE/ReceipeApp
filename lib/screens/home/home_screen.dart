@@ -21,21 +21,6 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-class Body extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    return Container(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          UserAccountHeader(),
-        ],
-      ),
-    );
-  }
-}
-
 class UserAccountHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
