@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
               CurrentScreen(),
               Container(
                 width: double.infinity,
-                padding: EdgeInsets.only(left: 20, right: 20),
+                padding: EdgeInsets.only(left: 20, right: 20, top: 10),
                 margin: EdgeInsets.only(
                   top: 10,
                 ),
