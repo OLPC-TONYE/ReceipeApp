@@ -19,8 +19,7 @@ class HomeScreen extends StatelessWidget {
   // firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance.ref().child('assets').child('images').child('ff47aa505d388c4436579121b38e32ab.jpg');
 
   Future<void> downloadURLExample() async {
-    downloadURL = 
-      await firebase_storage.FirebaseStorage.instance.ref().child('assets').child('images').child('ff47aa505d388c4436579121b38e32ab.jpg').getDownloadURL();
+    downloadURL = await firebase_storage.FirebaseStorage.instance.ref().child('assets').child('images').child('ff47aa505d388c4436579121b38e32ab.jpg').getDownloadURL();
     print(downloadURL);
   }
 
@@ -60,10 +59,10 @@ class MostViewed extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
-        // image: DecorationImage(
-        //   image: NetworkImage("gs://receipeapp-4dd90.appspot.com/assets/images/ff47aa505d388c4436579121b38e32ab.jpg"),
-        //   fit: BoxFit.cover,
-        // ),
+        image: DecorationImage(
+          image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Fff47aa505d388c4436579121b38e32ab.jpg?alt=media&token=9836f6d0-a551-4dfc-a153-4b98b9ea955b"),
+          fit: BoxFit.cover,
+        ),
         borderRadius: BorderRadius.circular(16.0),
         color: Colors.blue,
       ),
