@@ -57,7 +57,6 @@ class MostViewed extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.circular(16.0),
-          color: Colors.blue,
         ),
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
