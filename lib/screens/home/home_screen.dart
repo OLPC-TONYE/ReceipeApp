@@ -46,8 +46,8 @@ class MostViewed extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.all(20),
-        // margin: EdgeInsets.only(top: 30),
+        // padding: EdgeInsets.all(20),
+        margin: EdgeInsets.only(top: 20),
         width: MediaQuery.of(context).size.width * 0.85,
         decoration: BoxDecoration(
           image: DecorationImage(
