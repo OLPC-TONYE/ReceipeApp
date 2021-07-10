@@ -21,9 +21,7 @@ class ReceipeApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         primaryColor: Colors.red,
       ),
-      home: Scaffold(
-        body: 
-      ),
+      home: Scaffold(),
     );
   }
 }
