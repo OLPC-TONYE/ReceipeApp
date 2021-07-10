@@ -59,7 +59,7 @@ class MostViewed extends StatelessWidget {
           borderRadius: BorderRadius.circular(16.0),
         ),
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+          filter: ui.ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
