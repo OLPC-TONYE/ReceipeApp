@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
             child: UserAccountHeader(),
           ),
           MostViewed(),
-          Icon(Icons.mood),
+          Text( downloadURL != null ? downloadURL : 'Loading...'),
         ],
       ),
     );
