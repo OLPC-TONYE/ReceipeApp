@@ -36,7 +36,6 @@ class HomeScreen extends StatelessWidget {
             child: UserAccountHeader(),
           ),
           MostViewed(),
-          Text(downloadURL != null ? downloadURL : 'Loading...'),
         ],
       ),
     );
@@ -48,7 +47,7 @@ class MostViewed extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         padding: EdgeInsets.all(20),
-        margin: EdgeInsets.only(top: 30),
+        // margin: EdgeInsets.only(top: 30),
         width: MediaQuery.of(context).size.width * 0.85,
         decoration: BoxDecoration(
           image: DecorationImage(
