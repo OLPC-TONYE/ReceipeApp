@@ -21,7 +21,6 @@ class ReceipeApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         primaryColor: Colors.red,
       ),
-      bottomNavigationBar: BottomNavigationBar(),
       home: Scaffold(
         body: Column(
           mainAxisAlignment: MainAxisAlignment.end,
