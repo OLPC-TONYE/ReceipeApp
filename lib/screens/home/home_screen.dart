@@ -48,41 +48,36 @@ class MostViewed extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20),
-      margin: EdgeInsets.only(top: 30),
-      width: MediaQuery.of(context).size.width * 0.85,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Fff47aa505d388c4436579121b38e32ab.jpg?alt=media&token=9836f6d0-a551-4dfc-a153-4b98b9ea955b"),
-          fit: BoxFit.cover,
+        padding: EdgeInsets.all(20),
+        margin: EdgeInsets.only(top: 30),
+        width: MediaQuery.of(context).size.width * 0.85,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Fff47aa505d388c4436579121b38e32ab.jpg?alt=media&token=9836f6d0-a551-4dfc-a153-4b98b9ea955b"),
+            fit: BoxFit.cover,
+          ),
+          borderRadius: BorderRadius.circular(16.0),
+          color: Colors.blue,
         ),
-        borderRadius: BorderRadius.circular(16.0),
-        color: Colors.blue,
-      ),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(10),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: <Widget>[
-            Text(
-              "Most Viewed",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.w500,
+        child: BackdropFilter(
+          filter: ImageFilter.blur(10),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              Text(
+                "Most Viewed",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
-            ),
-            Text(
-              "Most Viewed",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.w500,
-                fontSize: S
+              Text(
+                "Most Viewed",
+                style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontSize: 25.0),
               ),
-            ),
-          ],
-        ),
-      )
-    );
+            ],
+          ),
+        ));
   }
 }
 
