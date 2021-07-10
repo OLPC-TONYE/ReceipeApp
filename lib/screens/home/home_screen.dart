@@ -25,7 +25,9 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    initializeDefault();
+    if (this.app == null) {
+      initializeDefault();
+    }
     downloadURLExample();
     return Container(
       width: MediaQuery.of(context).size.width,
