@@ -49,7 +49,6 @@ class MostViewed extends StatelessWidget {
         // padding: EdgeInsets.all(20),
         margin: EdgeInsets.only(top: 20),
         width: MediaQuery.of(context).size.width * 0.85,
-        height: 35.0,
         decoration: BoxDecoration(
           image: DecorationImage(
             image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Fff47aa505d388c4436579121b38e32ab.jpg?alt=media&token=9836f6d0-a551-4dfc-a153-4b98b9ea955b"),
@@ -62,11 +61,15 @@ class MostViewed extends StatelessWidget {
             filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
             child: Stack(
               children: <Widget>[
-                Text(
-                  "Most Viewed",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
+                Positioned(
+                  left: 15,
+                  top: 20,
+                  child: Text(
+                    "Most Viewed",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
                 Text(
