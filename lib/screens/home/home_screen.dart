@@ -59,7 +59,7 @@ class MostViewed extends StatelessWidget {
         ),
         child: ClipRect(
           child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+            filter: ImageFilter.blur(sigmaX: 1.0, sigmaY: 10.0),
             child: Stack(
               children: <Widget>[
                 Positioned(
