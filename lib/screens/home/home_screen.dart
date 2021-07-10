@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
             ),
             child: UserAccountHeader(),
           ),
-          MostViewed(),
+          TopFavourites(),
           NewestReceipes(),
         ],
       ),
@@ -51,11 +51,12 @@ class NewestReceipes extends StatelessWidget {
         borderRadius: BorderRadius.circular(16.0),
         color: Colors.green,
       ),
+      child: Text('Hello'),
     );
   }
 }
 
-class MostViewed extends StatelessWidget {
+class TopFavourites extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -74,17 +75,6 @@ class MostViewed extends StatelessWidget {
             filter: ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0),
             child: Stack(
               children: <Widget>[
-                Positioned(
-                  left: 15,
-                  top: 10,
-                  child: Text(
-                    "Most Viewed",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ),
                 Positioned(
                   right: 10,
                   bottom: 10,
