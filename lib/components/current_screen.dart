@@ -31,7 +31,8 @@ class _CurrentScreenState extends State<CurrentScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return this.Screen;
-    ;
+    return Scaffold(
+      body: this.Screen,
+    );
   }
 }
