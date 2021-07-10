@@ -58,7 +58,7 @@ class MostViewed extends StatelessWidget {
           ),
           borderRadius: BorderRadius.circular(16.0),
         ),
-        child: CliptRect(
+        child: ClipRect(
           BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
             child: Column(
