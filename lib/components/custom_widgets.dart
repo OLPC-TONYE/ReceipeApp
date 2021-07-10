@@ -27,7 +27,7 @@ class BottomAppNavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
-          SvgPicture.asset('assets/icons/home.svg'),
+          SvgPicture.asset('assets/icons/home.svg', size: 35),
           FaIcon(FontAwesomeIcons.plus, size: 35),
           FaIcon(FontAwesomeIcons.bookmark, size: 35),
           FaIcon(FontAwesomeIcons.user, size: 35),
