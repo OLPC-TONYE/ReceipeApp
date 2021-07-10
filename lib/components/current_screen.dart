@@ -32,7 +32,13 @@ class _CurrentScreenState extends State<CurrentScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: this.Screen,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          CurrentScreen(),
+          BottomAppNavBar(),
+        ],
+      ),
     );
   }
 }

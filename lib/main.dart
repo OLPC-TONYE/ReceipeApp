@@ -22,13 +22,7 @@ class ReceipeApp extends StatelessWidget {
         primaryColor: Colors.red,
       ),
       home: Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: <Widget>[
-            CurrentScreen(),
-            BottomAppNavBar(),
-          ],
-        ),
+        body: 
       ),
     );
   }
