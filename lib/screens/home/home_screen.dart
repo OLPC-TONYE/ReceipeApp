@@ -19,7 +19,8 @@ class HomeScreen extends StatelessWidget {
   // firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance.ref().child('assets').child('images').child('ff47aa505d388c4436579121b38e32ab.jpg');
 
   Future<void> downloadURLExample() async {
-    downloadURL = await firebase_storage.FirebaseStorage.instance.ref('assets/images/ff47aa505d388c4436579121b38e32ab.jpg').getDownloadURL();
+    downloadURL = 
+      await firebase_storage.FirebaseStorage.instance.ref().child('assets').child('images').child('ff47aa505d388c4436579121b38e32ab.jpg').getDownloadURL();
     print(downloadURL);
   }
 
@@ -46,7 +47,7 @@ class HomeScreen extends StatelessWidget {
             child: UserAccountHeader(),
           ),
           MostViewed(),
-          Text( downloadURL != null ? downloadURL : 'Loading...'),
+          Text(downloadURL != null ? downloadURL : 'Loading...'),
         ],
       ),
     );
