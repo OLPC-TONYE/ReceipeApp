@@ -37,7 +37,7 @@ class _MainScreenState extends State<MainScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
-          MainScreen(),
+          HomeScreen(),
           BottomAppNavBar(),
         ],
       ),
