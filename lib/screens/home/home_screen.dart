@@ -59,18 +59,29 @@ class MostViewed extends StatelessWidget {
         borderRadius: BorderRadius.circular(16.0),
         color: Colors.blue,
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: <Widget>[
-          Text(
-            "Most Viewed",
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.w500,
+      child: BackdropFilter(
+        filter: ImageFilter.blur(10),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            Text(
+              "Most Viewed",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w500,
+              ),
             ),
-          ),
-        ],
-      ),
+            Text(
+              "Most Viewed",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w500,
+                fontSize: S
+              ),
+            ),
+          ],
+        ),
+      )
     );
   }
 }
