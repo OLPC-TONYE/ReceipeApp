@@ -113,6 +113,12 @@ class UserAccountHeader extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  offset: Offset(0, 0),
+                  blurRadius: 10,
+                ),
+              ],
             ),
             child: Row(crossAxisAlignment: CrossAxisAlignment.end, children: <Widget>[
               FaIcon(FontAwesomeIcons.user),
