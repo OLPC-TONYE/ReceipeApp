@@ -36,7 +36,20 @@ class HomeScreen extends StatelessWidget {
             child: UserAccountHeader(),
           ),
           MostViewed(),
+          NewestReceipes(),
         ],
+      ),
+    );
+  }
+}
+
+class NewestReceipes extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16.0),
+        color: Colors.green,
       ),
     );
   }
@@ -46,7 +59,6 @@ class MostViewed extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        // padding: EdgeInsets.all(20),
         margin: EdgeInsets.only(top: 20),
         width: MediaQuery.of(context).size.width * 0.85,
         height: MediaQuery.of(context).size.height * 0.3,
