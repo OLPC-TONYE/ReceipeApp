@@ -8,19 +8,18 @@ import 'package:receipeapp/screens/home/home_screen.dart';
 import 'package:receipeapp/components/current_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(ReceipeApp());
 }
 
-class MyApp extends StatelessWidget {
+class ReceipeApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
-        primarySwatch: Colors.red,
+        primaryColor: Colors.red,
       ),
       home: Scaffold(
         body: Column(
