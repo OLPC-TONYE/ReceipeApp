@@ -116,7 +116,7 @@ class UserAccountHeader extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
                   offset: Offset(0, 0),
-                  blurRadius: 10,
+                  blurRadius: 1,
                 ),
               ],
             ),
