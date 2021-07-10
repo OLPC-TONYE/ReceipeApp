@@ -45,7 +45,6 @@ class HomeScreen extends StatelessWidget {
           ),
           MostViewed(),
           Icon(Icons.mood),
-          Text(downloadURL),
         ],
       ),
     );
