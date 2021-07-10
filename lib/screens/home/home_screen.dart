@@ -73,6 +73,7 @@ class MostViewed extends StatelessWidget {
                 ),
                 Text(
                   "Egusi Soup",
+                  textAlign: TextAlign.end,
                   style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontSize: 25.0),
                 ),
               ],
