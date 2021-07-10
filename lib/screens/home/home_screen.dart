@@ -58,23 +58,25 @@ class MostViewed extends StatelessWidget {
           ),
           borderRadius: BorderRadius.circular(16.0),
         ),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: <Widget>[
-              Text(
-                "Most Viewed",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w500,
+        child: CliptRect(
+          BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                Text(
+                  "Most Viewed",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
-              ),
-              Text(
-                "Most Viewed",
-                style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontSize: 25.0),
-              ),
-            ],
+                Text(
+                  "Egusi Soup",
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontSize: 25.0),
+                ),
+              ],
+            ),
           ),
         ));
   }
