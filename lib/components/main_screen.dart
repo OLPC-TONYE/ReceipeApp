@@ -9,14 +9,14 @@ import 'package:receipeapp/components/custom_widgets.dart';
 import 'package:receipeapp/screens/home/home_screen.dart';
 import 'package:receipeapp/screens/receipe/receipe_screen.dart';
 
-class CurrentScreen extends StatefulWidget {
+class MainScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _CurrentScreenState();
+    return _MainScreenState();
   }
 }
 
-class _CurrentScreenState extends State<CurrentScreen> {
+class _MainScreenState extends State<MainScreen> {
   var Screen;
 
   @override
@@ -37,7 +37,7 @@ class _CurrentScreenState extends State<CurrentScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
-          CurrentScreen(),
+          MainScreen(),
           BottomAppNavBar(),
         ],
       ),

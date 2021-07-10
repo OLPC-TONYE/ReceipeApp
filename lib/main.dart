@@ -5,7 +5,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
 import 'package:receipeapp/screens/home/home_screen.dart';
-import 'package:receipeapp/components/current_screen.dart';
+import 'package:receipeapp/components/main_screen.dart';
 
 void main() {
   runApp(ReceipeApp());
@@ -21,7 +21,7 @@ class ReceipeApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         primaryColor: Colors.red,
       ),
-      home: Scaffold(),
+      home: MainScreen(),
     );
   }
 }
