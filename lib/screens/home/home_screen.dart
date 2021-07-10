@@ -71,7 +71,7 @@ class TopFavourites extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               offset: Offset(0, 0),
-              blurRadius: 20,
+              blurRadius: 10,
             ),
           ],
           borderRadius: BorderRadius.circular(25.0),
