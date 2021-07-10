@@ -59,10 +59,10 @@ class MostViewed extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
-        image: DecorationImage(
-          image: NetworkImage("gs://receipeapp-4dd90.appspot.com/assets/images/ff47aa505d388c4436579121b38e32ab.jpg"),
-          fit: BoxFit.cover,
-        ),
+        // image: DecorationImage(
+        //   image: NetworkImage("gs://receipeapp-4dd90.appspot.com/assets/images/ff47aa505d388c4436579121b38e32ab.jpg"),
+        //   fit: BoxFit.cover,
+        // ),
         borderRadius: BorderRadius.circular(16.0),
         color: Colors.blue,
       ),
