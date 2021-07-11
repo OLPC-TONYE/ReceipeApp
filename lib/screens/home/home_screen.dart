@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
                 fontSize: 24,
               ),
             ),
-            FlatButton("Hey"),
+            FlatButton(onPressed: () {}, child: Text("See all")),
           ],
         ),
         TopFavourites(),
