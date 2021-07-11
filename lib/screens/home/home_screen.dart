@@ -29,6 +29,7 @@ class HomeScreen extends StatelessWidget {
           ),
           child: UserAccountHeader(),
         ),
+        UserAccountHeader(),
         TopFavourites(),
         NewestReceipes(),
       ],
