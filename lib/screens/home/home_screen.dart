@@ -44,10 +44,10 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             Text(
-              "FlutLab is on your service!",
+              "Recommended",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 25,
+                fontSize: 24,
               ),
             ),
             Icon(Icons.mood),
