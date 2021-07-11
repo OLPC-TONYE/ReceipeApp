@@ -42,27 +42,27 @@ class HomeScreen extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 10),
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: <Widget>[
-            Text(
-              "Recommended",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 24,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              Text(
+                "Recommended",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
               ),
-            ),
-            Spacer(),
-            FlatButton(
-              onPressed: () {},
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
+              Spacer(),
+              FlatButton(
+                onPressed: () {},
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                color: Colors.blueAccent,
+                child: Text("See all"),
               ),
-              color: Colors.blueAccent,
-              child: Text("See all"),
-            ),
-          ],
+            ],
+          ),
         ),
         TopFavourites(),
         NewestReceipes(),
