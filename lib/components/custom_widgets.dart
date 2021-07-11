@@ -30,7 +30,7 @@ class BottomAppNavBar extends StatelessWidget {
             icon: ImageIcon(
               AssetImage("assets/icons/home.png"),
               color: Colors.red,
-              size: 35,
+              size: 135,
             ),
             onPressed: () {},
           ),
