@@ -50,7 +50,14 @@ class HomeScreen extends StatelessWidget {
                 fontSize: 24,
               ),
             ),
-            FlatButton(onPressed: () {}, child: Text("See all")),
+            FlatButton(
+              onPressed: () {},
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
+              color: Colors.blueAccent,
+              child: Text("See all"),
+            ),
           ],
         ),
         TopFavourites(),
