@@ -16,7 +16,7 @@ class ReceipeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(top: 20, left: 10, right: 10),
-      width: MediaQuery.of(context).size.width * 0.65,
+      width: MediaQuery.of(context).size.width * 0.85,
       height: MediaQuery.of(context).size.height * 0.285,
       decoration: BoxDecoration(
         image: DecorationImage(
