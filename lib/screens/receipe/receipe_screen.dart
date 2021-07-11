@@ -8,11 +8,20 @@ class ReceipeDetailScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('title'),
       ),
-      body: Center(
-        child: Text(
-          'Text',
-        ),
-      ),
+      body: Body(),
+    );
+  }
+}
+
+class Body extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: <Widget>[
+        Text("FlutLab is on your service!"),
+        Icon(Icons.mood),
+      ],
     );
   }
 }
