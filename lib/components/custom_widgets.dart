@@ -34,9 +34,33 @@ class BottomAppNavBar extends StatelessWidget {
             ),
             onPressed: () {},
           ),
-          FaIcon(FontAwesomeIcons.plus, size: 35),
-          FaIcon(FontAwesomeIcons.bookmark, size: 35),
-          FaIcon(FontAwesomeIcons.user, size: 35),
+          IconButton(
+            // icon: Image.asset("assets/icons/home.png", color: Colors.blue, width: 55, height: 55),
+            icon: ImageIcon(
+              AssetImage("assets/icons/home.png"),
+              color: Colors.red,
+              size: 135,
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            // icon: Image.asset("assets/icons/home.png", color: Colors.blue, width: 55, height: 55),
+            icon: ImageIcon(
+              AssetImage("assets/icons/home.png"),
+              color: Colors.red,
+              size: 135,
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            // icon: Image.asset("assets/icons/home.png", color: Colors.blue, width: 55, height: 55),
+            icon: ImageIcon(
+              AssetImage("assets/icons/home.png"),
+              color: Colors.red,
+              size: 135,
+            ),
+            onPressed: () {},
+          ),
         ],
       ),
     );
