@@ -29,7 +29,7 @@ class ReceipeButton extends StatelessWidget {
             blurRadius: 12,
           ),
         ],
-        borderRadius: BorderRadius.circular(20.0),
+        borderRadius: BorderRadius.circular(18.0),
       ),
       child: ClipRect(
         child: BackdropFilter(
