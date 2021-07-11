@@ -31,7 +31,9 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               Text("FlutLab is on your service!"),
-              AssetImage("assets/icons/user.png"),
+              Image(
+                AssetImage("assets/icons/user.png"),
+              ),
             ],
           ),
         ),
