@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
     return Column(
       children: <Widget>[
         Container(
-          height: MediaQuery.of(context).size.height * 0.1,
+          height: MediaQuery.of(context).size.height * 0.05,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16.0),
             color: Colors.blueAccent,
