@@ -27,6 +27,13 @@ class HomeScreen extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.blueAccent,
           ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              Text("FlutLab is on your service!"),
+              Icon(Icons.mood),
+            ],
+          ),
         ),
         ConstrainedBox(
           constraints: BoxConstraints(
