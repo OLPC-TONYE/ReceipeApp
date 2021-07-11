@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
     return Column(
       children: <Widget>[
         Container(
-          height: MediaQuery.of(context).size.height * 0.1,
+          height: MediaQuery.of(context).size.height * 0.09,
           decoration: BoxDecoration(
             color: Colors.blueAccent,
           ),
@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
               Text("FlutLab is on your service!"),
               Image(
                 image: AssetImage("assets/icons/user.png"),
-                width: 35,
+                width: 40,
               ),
             ],
           ),
