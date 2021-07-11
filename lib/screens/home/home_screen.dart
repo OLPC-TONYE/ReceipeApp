@@ -41,6 +41,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         Row(
+          margin: EdgeInsets.all(10),
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             Text(
