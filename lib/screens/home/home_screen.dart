@@ -66,9 +66,17 @@ class TopFavourites extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
-      child: ReceipeButton(
-        receipeName: "E Soup",
-        imageUrl: "https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Fff47aa505d388c4436579121b38e32ab.jpg?alt=media&token=9836f6d0-a551-4dfc-a153-4b98b9ea955b",
+      child: Row(
+        children: <Widget>[
+          ReceipeButton(
+            receipeName: "E Soup",
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Fff47aa505d388c4436579121b38e32ab.jpg?alt=media&token=9836f6d0-a551-4dfc-a153-4b98b9ea955b",
+          ),
+          ReceipeButton(
+            receipeName: "E Soup",
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Fff47aa505d388c4436579121b38e32ab.jpg?alt=media&token=9836f6d0-a551-4dfc-a153-4b98b9ea955b",
+          ),
+        ],
       ),
     );
   }
