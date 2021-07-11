@@ -16,25 +16,25 @@ class ReceipeButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(top: 20, left: 10, right: 10),
-      width: MediaQuery.of(context).size.width * 0.85,
-      height: MediaQuery.of(context).size.height * 0.285,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: NetworkImage(imageUrl),
-          fit: BoxFit.cover,
-        ),
-        boxShadow: [
-          BoxShadow(
-            offset: Offset(0, 0),
-            blurRadius: 12,
+    return GestureDetector(
+      onTap: onClick,
+      child: Container(
+        margin: EdgeInsets.only(top: 20, left: 10, right: 10),
+        width: MediaQuery.of(context).size.width * 0.85,
+        height: MediaQuery.of(context).size.height * 0.285,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: NetworkImage(imageUrl),
+            fit: BoxFit.cover,
           ),
-        ],
-        borderRadius: BorderRadius.circular(18.0),
-      ),
-      child: GestureDetector(
-        onTap: onClick,
+          boxShadow: [
+            BoxShadow(
+              offset: Offset(0, 0),
+              blurRadius: 12,
+            ),
+          ],
+          borderRadius: BorderRadius.circular(18.0),
+        ),
         child: ClipRect(
           child: BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0),
