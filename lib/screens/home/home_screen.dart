@@ -24,22 +24,7 @@ class HomeScreen extends StatelessWidget {
     }
     return Column(
       children: <Widget>[
-        Container(
-          height: MediaQuery.of(context).size.height * 0.09,
-          padding: EdgeInsets.only(left: 10, right: 20, top: 5),
-          decoration: BoxDecoration(
-            color: Colors.blueAccent,
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: <Widget>[
-              Image(
-                image: AssetImage("assets/icons/user.png"),
-                width: 40,
-              ),
-            ],
-          ),
-        ),
+        RecommendedWithMore(),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           child: Row(
@@ -67,6 +52,28 @@ class HomeScreen extends StatelessWidget {
         TopFavourites(),
         NewestReceipes(),
       ],
+    );
+  }
+}
+
+class RecommendedWithMore extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: MediaQuery.of(context).size.height * 0.09,
+      padding: EdgeInsets.only(left: 10, right: 20, top: 5),
+      decoration: BoxDecoration(
+        color: Colors.blueAccent,
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          Image(
+            image: AssetImage("assets/icons/user.png"),
+            width: 40,
+          ),
+        ],
+      ),
     );
   }
 }
