@@ -45,7 +45,10 @@ class HomeScreen extends StatelessWidget {
           children: <Widget>[
             Text(
               "FlutLab is on your service!",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 25,
+              ),
             ),
             Icon(Icons.mood),
           ],
