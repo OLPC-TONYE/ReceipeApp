@@ -38,6 +38,7 @@ class ReceipeDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         Container(
           height: MediaQuery.of(context).size.height * 0.35,
