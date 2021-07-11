@@ -40,25 +40,39 @@ class ReceipeDetail extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-        Container(
-          height: MediaQuery.of(context).size.height * 0.35,
-          width: MediaQuery.of(context).size.width * 0.85,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage(imageUrl),
-              fit: BoxFit.cover,
-            ),
-            boxShadow: [
-              BoxShadow(
-                offset: Offset(0, 0),
-                blurRadius: 12,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Text("FlutLab is on your service!"),
+                  Icon(Icons.mood),
+                ],
               ),
-            ],
-            borderRadius: BorderRadius.circular(18.0),
-          ),
-          child: Stack(
-            children: <Widget>[],
-          ),
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height * 0.35,
+              width: MediaQuery.of(context).size.width * 0.85,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(imageUrl),
+                  fit: BoxFit.cover,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    offset: Offset(0, 0),
+                    blurRadius: 12,
+                  ),
+                ],
+                borderRadius: BorderRadius.circular(18.0),
+              ),
+              child: Stack(
+                children: <Widget>[],
+              ),
+            ),
+          ],
         ),
         Text("FlutLab is on your service!"),
         Icon(Icons.mood),
