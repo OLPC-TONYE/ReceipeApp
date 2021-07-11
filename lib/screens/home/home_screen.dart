@@ -22,6 +22,12 @@ class HomeScreen extends StatelessWidget {
     }
     return Column(
       children: <Widget>[
+        Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16.0),
+            color: Colors.green,
+          ),
+        ),
         ConstrainedBox(
           constraints: BoxConstraints(
             maxWidth: double.infinity,
