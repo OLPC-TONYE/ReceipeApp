@@ -7,10 +7,12 @@ class ReceipeButton extends StatelessWidget {
     Key key,
     this.receipeName,
     this.imageUrl,
+    this.onClick,
   }) : super(key: key);
 
   final String receipeName;
   final String imageUrl;
+  final Function onClick;
 
   @override
   Widget build(BuildContext context) {
@@ -31,24 +33,27 @@ class ReceipeButton extends StatelessWidget {
         ],
         borderRadius: BorderRadius.circular(18.0),
       ),
-      child: ClipRect(
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0),
-          child: Stack(
-            children: <Widget>[
-              Positioned(
-                right: 10,
-                bottom: 10,
-                child: Text(
-                  receipeName,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 25.0,
+      child: GestureDetector(
+        onTap: onClick,
+        child: ClipRect(
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0),
+            child: Stack(
+              children: <Widget>[
+                Positioned(
+                  right: 10,
+                  bottom: 10,
+                  child: Text(
+                    receipeName,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 25.0,
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

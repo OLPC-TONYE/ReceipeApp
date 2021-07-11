@@ -100,10 +100,12 @@ class TopFavourites extends StatelessWidget {
           ReceipeButton(
             receipeName: "Egusi Soup",
             imageUrl: "https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Fff47aa505d388c4436579121b38e32ab.jpg?alt=media&token=9836f6d0-a551-4dfc-a153-4b98b9ea955b",
+            onClick: () {},
           ),
           ReceipeButton(
             receipeName: "Vegetable Soup",
             imageUrl: "https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Freceipe_image002.jpg?alt=media&token=8fc9ac5d-1e49-4a1c-b3de-b71cfe4a3efd",
+            onClick: () {},
           ),
         ],
       ),
