@@ -26,7 +26,7 @@ class BottomAppNavBar extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
           IconButton(
-            icon: AssetImage("assets/icons/home.png"),
+            icon: Image.asset("assets/icons/home.png"),
             onPressed: () {},
           ),
           Icon(Icons.home, size: 35),
