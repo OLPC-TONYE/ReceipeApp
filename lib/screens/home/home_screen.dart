@@ -40,6 +40,13 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            Text("FlutLab is on your service!"),
+            Icon(Icons.mood),
+          ],
+        ),
         TopFavourites(),
         NewestReceipes(),
       ],
