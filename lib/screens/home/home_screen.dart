@@ -114,7 +114,7 @@ class ReceipeButton extends StatelessWidget {
 class TopFavourites extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ReceipeButton(text: "Egusi Soup");
+    return ReceipeButton(text: "E Soup");
   }
 }
 
