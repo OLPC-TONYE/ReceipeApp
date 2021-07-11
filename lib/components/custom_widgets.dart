@@ -25,6 +25,10 @@ class BottomAppNavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
+          IconButton(
+            icon: Icon(Icons.favorite),
+            onPressed: () {},
+          ),
           Icon(Icons.home, size: 35),
           FaIcon(FontAwesomeIcons.plus, size: 35),
           FaIcon(FontAwesomeIcons.bookmark, size: 35),
