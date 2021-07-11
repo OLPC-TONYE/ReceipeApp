@@ -37,7 +37,6 @@ class BottomAppNavBar extends StatelessWidget {
             // icon: Image.asset("assets/icons/home.png", color: Colors.blue, width: 55, height: 55),
             icon: ImageIcon(
               AssetImage("assets/icons/home.png"),
-              color: Colors.red,
               size: 135,
             ),
             onPressed: () {},
@@ -46,7 +45,6 @@ class BottomAppNavBar extends StatelessWidget {
             // icon: Image.asset("assets/icons/home.png", color: Colors.blue, width: 55, height: 55),
             icon: ImageIcon(
               AssetImage("assets/icons/bookmark.png"),
-              color: Colors.red,
               size: 135,
             ),
             onPressed: () {},
