@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BottomAppNavBar extends StatelessWidget {
@@ -27,7 +25,7 @@ class BottomAppNavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
-          Icon(Icons.home),
+          Icon(Icons.home, size: 35),
           FaIcon(FontAwesomeIcons.plus, size: 35),
           FaIcon(FontAwesomeIcons.bookmark, size: 35),
           FaIcon(FontAwesomeIcons.user, size: 35),
