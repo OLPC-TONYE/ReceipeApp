@@ -59,47 +59,62 @@ class NewestReceipes extends StatelessWidget {
   }
 }
 
-class TopFavourites extends StatelessWidget {
+class ReceipeButton extends StatelessWidget {
+  const ReceipeButton({
+    Key key,
+    this.text,
+  }) : super(key: key);
+
+  String text;
+
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.only(top: 20),
-        width: MediaQuery.of(context).size.width * 0.85,
-        height: MediaQuery.of(context).size.height * 0.285,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Fff47aa505d388c4436579121b38e32ab.jpg?alt=media&token=9836f6d0-a551-4dfc-a153-4b98b9ea955b"),
-            fit: BoxFit.cover,
-          ),
-          boxShadow: [
-            BoxShadow(
-              offset: Offset(0, 0),
-              blurRadius: 10,
-            ),
-          ],
-          borderRadius: BorderRadius.circular(25.0),
+      margin: EdgeInsets.only(top: 20),
+      width: MediaQuery.of(context).size.width * 0.85,
+      height: MediaQuery.of(context).size.height * 0.285,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Fff47aa505d388c4436579121b38e32ab.jpg?alt=media&token=9836f6d0-a551-4dfc-a153-4b98b9ea955b"),
+          fit: BoxFit.cover,
         ),
-        child: ClipRect(
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0),
-            child: Stack(
-              children: <Widget>[
-                Positioned(
-                  right: 10,
-                  bottom: 10,
-                  child: Text(
-                    "Egusi Soup",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 25.0,
-                    ),
+        boxShadow: [
+          BoxShadow(
+            offset: Offset(0, 0),
+            blurRadius: 10,
+          ),
+        ],
+        borderRadius: BorderRadius.circular(25.0),
+      ),
+      child: ClipRect(
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0),
+          child: Stack(
+            children: <Widget>[
+              Positioned(
+                right: 10,
+                bottom: 10,
+                child: Text(
+                  "Egusi Soup",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 25.0,
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ));
+        ),
+      ),
+    );
+  }
+}
+
+class TopFavourites extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ReceipeButton(text: "Egusi Soup");
   }
 }
 
