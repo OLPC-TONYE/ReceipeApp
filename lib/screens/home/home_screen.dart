@@ -20,26 +20,18 @@ class HomeScreen extends StatelessWidget {
     if (this.app == null) {
       initializeDefault();
     }
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * 0.15,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(16.0),
-        color: Colors.blueAccent,
-      ),
-      child: Column(
-        children: <Widget>[
-          ConstrainedBox(
-            constraints: BoxConstraints(
-              maxWidth: double.infinity,
-              maxHeight: 60,
-            ),
-            child: UserAccountHeader(),
+    return Column(
+      children: <Widget>[
+        ConstrainedBox(
+          constraints: BoxConstraints(
+            maxWidth: double.infinity,
+            maxHeight: 60,
           ),
-          TopFavourites(),
-          NewestReceipes(),
-        ],
-      ),
+          child: UserAccountHeader(),
+        ),
+        TopFavourites(),
+        NewestReceipes(),
+      ],
     );
   }
 }
