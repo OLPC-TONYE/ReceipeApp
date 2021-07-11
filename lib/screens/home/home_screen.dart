@@ -95,7 +95,7 @@ class ReceipeButton extends StatelessWidget {
                 right: 10,
                 bottom: 10,
                 child: Text(
-                  "Egusi Soup",
+                  text,
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w500,
