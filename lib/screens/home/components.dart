@@ -9,6 +9,7 @@ class ReceipeButton extends StatelessWidget {
   }) : super(key: key);
 
   final String receipeName;
+  final String imageUrl;
 
   @override
   Widget build(BuildContext context) {
@@ -24,10 +25,10 @@ class ReceipeButton extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             offset: Offset(0, 0),
-            blurRadius: 10,
+            blurRadius: 12,
           ),
         ],
-        borderRadius: BorderRadius.circular(25.0),
+        borderRadius: BorderRadius.circular(20.0),
       ),
       child: ClipRect(
         child: BackdropFilter(
