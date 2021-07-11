@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
     }
     return Column(
       children: <Widget>[
-        RecommendedWithMore(),
+        AppBarWithUser(),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           child: Row(
@@ -50,13 +50,12 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         TopFavourites(),
-        NewestReceipes(),
       ],
     );
   }
 }
 
-class RecommendedWithMore extends StatelessWidget {
+class AppBarWithUser extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
