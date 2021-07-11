@@ -64,7 +64,7 @@ class ReceipeDetail extends StatelessWidget {
                   ),
                 ],
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(63),
+                  // topLeft: Radius.circular(63),
                   bottomLeft: Radius.circular(63),
                 ),
               ),
