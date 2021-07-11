@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
                 fontSize: 24,
               ),
             ),
-            Icon(Icons.mood),
+            FlatButton("Hey"),
           ],
         ),
         TopFavourites(),
