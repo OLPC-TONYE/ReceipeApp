@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.blueAccent,
           ),
-          child: Column(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               Image(
@@ -84,8 +84,8 @@ class TopFavourites extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
+      scrollDirection: Axis.vertical,
+      child: Column(
         children: <Widget>[
           ReceipeButton(
             receipeName: "Egusi Soup",
