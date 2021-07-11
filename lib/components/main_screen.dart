@@ -38,9 +38,9 @@ class _MainScreenState extends State<MainScreen> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
           HomeScreen(),
-          BottomAppNavBar(),
         ],
       ),
+      bottomAppNavBar: BottomAppNavBar(),
     );
   }
 }
