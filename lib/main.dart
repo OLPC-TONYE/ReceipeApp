@@ -18,7 +18,7 @@ class ReceipeApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.grey,
+        scaffoldBackgroundColor: Colors.lightBlueAccent,
         primaryColor: Colors.red,
       ),
       home: MainScreen(),
