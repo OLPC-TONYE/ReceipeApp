@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
           height: MediaQuery.of(context).size.height * 0.2,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16.0),
-            color: Colors.green,
+            color: Colors.blueAccent,
           ),
         ),
         ConstrainedBox(
