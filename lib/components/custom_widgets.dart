@@ -44,7 +44,7 @@ class BottomAppNavBar extends StatelessWidget {
           IconButton(
             // icon: Image.asset("assets/icons/home.png", color: Colors.blue, width: 55, height: 55),
             icon: ImageIcon(
-              FittedBox(fit: BoxFit.cover, child: ImageIcon(AssetImage("assets/icon/camera.png"))),
+              AssetImage("assets/icons/bookmark.png"),
               size: 135,
             ),
             onPressed: () {},
