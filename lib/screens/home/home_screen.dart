@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.blueAccent,
           ),
-          child: Row(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               Image(
