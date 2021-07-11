@@ -19,7 +19,7 @@ class ReceipeButton extends StatelessWidget {
         top: 20,
         left: 10,
       ),
-      width: MediaQuery.of(context).size.width * 0.85,
+      width: MediaQuery.of(context).size.width * 0.65,
       height: MediaQuery.of(context).size.height * 0.285,
       decoration: BoxDecoration(
         image: DecorationImage(
