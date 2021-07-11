@@ -62,10 +62,10 @@ class NewestReceipes extends StatelessWidget {
 class ReceipeButton extends StatelessWidget {
   const ReceipeButton({
     Key key,
-    this.text,
+    this.receipeName,
   }) : super(key: key);
 
-  final String text;
+  final String receipeName;
 
   @override
   Widget build(BuildContext context) {
@@ -95,7 +95,7 @@ class ReceipeButton extends StatelessWidget {
                 right: 10,
                 bottom: 10,
                 child: Text(
-                  text,
+                  receipeName,
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w500,
