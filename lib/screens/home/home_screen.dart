@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
               Text("FlutLab is on your service!"),
               Image(
                 image: AssetImage("assets/icons/user.png"),
-                size: 35,
+                width: 35,
               ),
             ],
           ),
