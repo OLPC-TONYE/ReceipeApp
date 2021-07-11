@@ -40,7 +40,7 @@ class ReceipeDetail extends StatelessWidget {
     return Column(
       children: <Widget>[
         Container(
-          height: MediaQuery.of(context).height * 0.35,
+          height: MediaQuery.of(context).size.height * 0.35,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: NetworkImage(imageUrl),
