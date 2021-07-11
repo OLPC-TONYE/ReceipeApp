@@ -40,7 +40,7 @@ class _MainScreenState extends State<MainScreen> {
           HomeScreen(),
         ],
       ),
-      bottomAppNavBar: BottomAppNavBar(),
+      bottomNavBar: BottomAppNavBar(),
     );
   }
 }
