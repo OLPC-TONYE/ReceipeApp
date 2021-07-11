@@ -63,7 +63,10 @@ class ReceipeDetail extends StatelessWidget {
                     blurRadius: 12,
                   ),
                 ],
-                borderRadius: BorderRadius.circular(18.0),
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(63),
+                  bottomLeft: Radius.circular(63),
+                ),
               ),
               child: Stack(
                 children: <Widget>[],
