@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
     }
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * 0.87,
+      height: MediaQuery.of(context).size.height * 0.15,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16.0),
         color: Colors.blueAccent,
