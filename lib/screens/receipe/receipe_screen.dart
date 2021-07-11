@@ -54,6 +54,7 @@ class ReceipeDetail extends StatelessWidget {
               width: MediaQuery.of(context).size.width * 0.75,
               decoration: BoxDecoration(
                 image: DecorationImage(
+                  alignment: Alignment.centerLeft,
                   image: NetworkImage(imageUrl),
                   fit: BoxFit.cover,
                 ),
