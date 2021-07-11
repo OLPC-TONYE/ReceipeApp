@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
     return Column(
       children: <Widget>[
         Container(
-          height: MediaQuery.of(context).size.height * 0.285,
+          height: MediaQuery.of(context).size.height * 0.2,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16.0),
             color: Colors.green,
@@ -38,7 +38,6 @@ class HomeScreen extends StatelessWidget {
         ),
         TopFavourites(),
         NewestReceipes(),
-        UserAccountHeader(),
       ],
     );
   }
