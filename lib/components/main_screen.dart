@@ -34,12 +34,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: <Widget>[
-          HomeScreen(),
-        ],
-      ),
+      body: HomeScreen(),
       bottomNavigationBar: BottomAppNavBar(),
     );
   }
