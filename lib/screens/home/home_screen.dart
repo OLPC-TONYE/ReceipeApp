@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
             children: <Widget>[
               Text("FlutLab is on your service!"),
               Image(
-                AssetImage("assets/icons/user.png"),
+                image: AssetImage("assets/icons/user.png"),
               ),
             ],
           ),
