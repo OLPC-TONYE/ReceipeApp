@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:ui';
+
 import 'package:receipeapp/screens/home/components.dart';
+import 'package:receipeapp/screens/receipe/receipe_screen.dart';
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -100,7 +102,14 @@ class TopFavourites extends StatelessWidget {
           ReceipeButton(
             receipeName: "Egusi Soup",
             imageUrl: "https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Fff47aa505d388c4436579121b38e32ab.jpg?alt=media&token=9836f6d0-a551-4dfc-a153-4b98b9ea955b",
-            onClick: () {},
+            onClick: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ReceipeDetailScreen(),
+                ),
+              );
+            },
           ),
           ReceipeButton(
             receipeName: "Vegetable Soup",
