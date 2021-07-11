@@ -50,6 +50,7 @@ class HomeScreen extends StatelessWidget {
                 fontSize: 24,
               ),
             ),
+            Spacer()
             FlatButton(
               onPressed: () {},
               shape: RoundedRectangleBorder(
