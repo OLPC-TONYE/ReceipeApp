@@ -6,6 +6,7 @@ class ReceipeButton extends StatelessWidget {
   const ReceipeButton({
     Key key,
     this.receipeName,
+    this.imageUrl,
   }) : super(key: key);
 
   final String receipeName;
@@ -19,7 +20,7 @@ class ReceipeButton extends StatelessWidget {
       height: MediaQuery.of(context).size.height * 0.285,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/receipeapp-4dd90.appspot.com/o/assets%2Fimages%2Fff47aa505d388c4436579121b38e32ab.jpg?alt=media&token=9836f6d0-a551-4dfc-a153-4b98b9ea955b"),
+          image: NetworkImage(imageUrl),
           fit: BoxFit.cover,
         ),
         boxShadow: [
