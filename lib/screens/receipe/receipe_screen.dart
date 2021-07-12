@@ -81,7 +81,7 @@ class ReceipeDetail extends StatelessWidget {
                 children: <Widget>[
                   Image(
                     image: AssetImage("assets/icons/hourglass.png"),
-                    width: 30,
+                    width: 35,
                   ),
                   Text("Cook Time"),
                   Text("1 Hour"),
@@ -92,7 +92,7 @@ class ReceipeDetail extends StatelessWidget {
                 children: <Widget>[
                   Image(
                     image: AssetImage("assets/icons/heart.png"),
-                    width: 30,
+                    width: 35,
                   ),
                   Text("Likes"),
                   Text("1"),
@@ -103,7 +103,7 @@ class ReceipeDetail extends StatelessWidget {
                 children: <Widget>[
                   Image(
                     image: AssetImage("assets/icons/bookmark2.png"),
-                    width: 30,
+                    width: 40,
                   ),
                   Text("Not Saved"),
                 ],
@@ -111,15 +111,12 @@ class ReceipeDetail extends StatelessWidget {
             ],
           ),
         ),
-        SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: <Widget>[
-              Text("FlutLab is on your service!"),
-              Icon(Icons.mood),
-            ],
-          ),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text("FlutLab is on your service!"),
+            Icon(Icons.mood),
+          ],
         ),
       ],
     );
