@@ -46,7 +46,9 @@ class ReceipeDetail extends StatelessWidget {
                 children: <Widget>[
                   IconButton(
                     icon: Image.asset("assets/icons/back_arrow.png"),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
                   ),
                 ],
               ),
