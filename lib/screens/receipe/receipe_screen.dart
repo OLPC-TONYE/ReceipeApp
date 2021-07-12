@@ -74,7 +74,7 @@ class ReceipeDetail extends StatelessWidget {
             Image(
               image: AssetImage(
                 "assets/icons/hourglass.png",
-                size: 23,
+                width: 23,
               ),
             ),
           ],
