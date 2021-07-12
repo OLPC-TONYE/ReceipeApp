@@ -113,14 +113,13 @@ class ReceipeDetail extends StatelessWidget {
         ),
         Container(
           width: MediaQuery.of(context).size.width,
-          height: double.infinity,
-          decoration: BoxDecoration(
-            color: Colors.blueGrey,
-          ),
+          decoration: BoxDecoration(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text("FlutLab is on your service!"),
+              FlatButton(
+                color: Colors.blue,
+              ),
               Icon(Icons.mood),
             ],
           ),
