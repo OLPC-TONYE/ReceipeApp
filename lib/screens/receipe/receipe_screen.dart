@@ -123,7 +123,13 @@ class ReceipeDetail extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(top: 10),
-                child: Text("Ingredients"),
+                child: Text(
+                  "Ingredients",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
               ),
               Icon(Icons.mood),
             ],
