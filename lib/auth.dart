@@ -21,7 +21,9 @@ class AuthPage extends StatelessWidget {
             appBar: AppBar(
               bottom: TabBar(
                 tabs: [
-                  Tab(icon: Icon(Icons.directions_car)),
+                  Tab(
+                    text: "SignUp",
+                  ),
                   Tab(icon: Icon(Icons.directions_bike)),
                 ],
               ),
