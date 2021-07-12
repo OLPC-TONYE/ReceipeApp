@@ -88,7 +88,7 @@ class _SignUpFormState extends State<SignUpForm> {
             decoration: InputDecoration(icon: Icon(Icons.lock), border: UnderlineInputBorder(), labelText: 'Enter your password'),
           ),
           ElevatedButton(
-            onPressed: () {
+            onPressed: () async {
               // Validate returns true if the form is valid, or false otherwise.
               if (_formKey.currentState.validate()) {
                 // If the form is valid, display a snackbar. In the real world,
