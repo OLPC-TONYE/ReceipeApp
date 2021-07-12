@@ -57,6 +57,7 @@ class _SignUpFormState extends State<SignUpForm> {
     // Clean up the controller when the widget is disposed.
     _usernameField.dispose();
     _passwordField.dispose();
+    _passwordConfirmField.dispose();
     super.dispose();
   }
 
@@ -113,6 +114,7 @@ class _SignUpFormState extends State<SignUpForm> {
                     email: _usernameField.text,
                     password: "SuperSecretPassword!",
                   );
+                  print(userCredential.user.uid);
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Signed In")));
                 } on FirebaseAuthException catch (e) {
                   if (e.code == 'weak-password') {
@@ -125,74 +127,10 @@ class _SignUpFormState extends State<SignUpForm> {
                 }
               }
             },
-            child: Text('Submit'),
+            child: Text('Sign Up'),
           ),
         ],
       ),
-    );
-  }
-}
-
-class SignUpPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        Text(
-          "Sign Up",
-          style: TextStyle(
-            fontWeight: FontWeight.w500,
-            fontSize: 35,
-          ),
-        ),
-        Container(
-          margin: EdgeInsets.only(top: 10),
-          width: MediaQuery.of(context).size.width * 0.85,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(26.0),
-            color: Colors.white60,
-          ),
-          child: Padding(
-            padding: EdgeInsets.only(
-              left: 10,
-              right: 10,
-            ),
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: 'Email e.g example@gmail.com',
-                contentPadding: EdgeInsets.symmetric(
-                  vertical: 20,
-                  horizontal: 10,
-                ),
-              ),
-            ),
-          ),
-        ),
-        Container(
-          margin: EdgeInsets.only(top: 20),
-          width: MediaQuery.of(context).size.width * 0.85,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(26.0),
-            color: Colors.white60,
-          ),
-          child: Padding(
-            padding: EdgeInsets.only(left: 10, right: 10, top: 5),
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: 'Password',
-                contentPadding: EdgeInsets.symmetric(
-                  vertical: 20,
-                  horizontal: 10,
-                ),
-              ),
-            ),
-          ),
-        ),
-        FlatButton(
-          child: Text('SignUp'),
-        )
-      ],
     );
   }
 }
