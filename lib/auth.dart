@@ -75,7 +75,7 @@ class _SignUpFormState extends State<SignUpForm> {
             },
             decoration: InputDecoration(
                 icon: Icon(
-                  Icons.password_outlined,
+                  Icons.password,
                 ),
                 border: UnderlineInputBorder(),
                 labelText: 'Enter your username'),
