@@ -97,7 +97,7 @@ class ReceipeDetail extends StatelessWidget {
                 ],
               ),
               Column(
-                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Image(
                     image: AssetImage("assets/icons/bookmark2.png"),
