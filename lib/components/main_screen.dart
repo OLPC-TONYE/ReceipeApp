@@ -34,6 +34,13 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var user = context.watch<User>();
+    if (user == null) {
+      print('User is currently signed out!');
+    } else {
+      print('User is signed in!');
+    }
+
     return Scaffold(
       body: HomeScreen(),
       bottomNavigationBar: BottomAppNavBar(),
