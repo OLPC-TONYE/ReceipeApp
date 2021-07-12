@@ -20,8 +20,6 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   var Screen;
-  FirebaseAuth auth = FirebaseAuth.instance;
-
   @override
   void initState() {
     super.initState();
