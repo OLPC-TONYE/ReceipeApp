@@ -84,6 +84,7 @@ class ReceipeDetail extends StatelessWidget {
                     width: 30,
                   ),
                   Text("Cook Time"),
+                  Text("1 Hour"),
                 ],
               ),
               Column(
@@ -94,6 +95,7 @@ class ReceipeDetail extends StatelessWidget {
                     width: 30,
                   ),
                   Text("Likes"),
+                  Text("1"),
                 ],
               ),
               Column(
