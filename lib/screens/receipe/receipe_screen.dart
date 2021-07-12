@@ -68,14 +68,20 @@ class ReceipeDetail extends StatelessWidget {
             ],
           ),
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            Image(
-              image: AssetImage("assets/icons/hourglass.png"),
-              width: 30,
-            ),
-          ],
+        Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16.0),
+            color: Colors.white,
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Image(
+                image: AssetImage("assets/icons/hourglass.png"),
+                width: 30,
+              ),
+            ],
+          ),
         ),
         Text("FlutLab is on your service!"),
         Icon(Icons.mood),
