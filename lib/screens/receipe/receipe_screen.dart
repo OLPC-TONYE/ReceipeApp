@@ -72,7 +72,7 @@ class ReceipeDetail extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Image(
-              image: Image.asset("assets/icons/hourglass.png"),
+              image: AssetImage("assets/icons/hourglass.png"),
             ),
           ],
         ),
