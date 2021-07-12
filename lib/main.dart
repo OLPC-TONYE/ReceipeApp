@@ -11,8 +11,8 @@ import 'package:receipeapp/screens/home/home_screen.dart';
 import 'package:receipeapp/components/main_screen.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await Firebase.initializeApp();
   runApp(ReceipeApp());
 }
 
