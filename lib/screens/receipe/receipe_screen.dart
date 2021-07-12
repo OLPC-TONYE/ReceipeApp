@@ -44,8 +44,10 @@ class ReceipeDetail extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text("FlutLab is on your service!"),
-                  Icon(Icons.mood),
+                  IconButton(
+                    icon: Image.asset("assets/icons/back_arrow.png"),
+                    onPressed: () {},
+                  ),
                 ],
               ),
             ),
