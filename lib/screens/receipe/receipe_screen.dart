@@ -61,7 +61,7 @@ class ReceipeDetail extends StatelessWidget {
             children: <Widget>[
               Positioned(
                 top: 20,
-                left: 15,
+                left: 5,
                 child: IconButton(
                   icon: Image.asset("assets/icons/back_arrow.png"),
                   onPressed: () {
