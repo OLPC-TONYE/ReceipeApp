@@ -50,11 +50,13 @@ class _SignUpFormState extends State<SignUpForm> {
 
   final _usernameField = TextEditingController();
   final _passwordField = TextEditingController();
+  final _passwordConfirmField = TextEditingController();
 
   @override
   void dispose() {
     // Clean up the controller when the widget is disposed.
     _usernameField.dispose();
+    _passwordField.dispose();
     super.dispose();
   }
 
@@ -78,6 +80,17 @@ class _SignUpFormState extends State<SignUpForm> {
           ),
           TextFormField(
             controller: _passwordField,
+            // The validator receives the text that the user has entered.
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return 'Please enter some text';
+              }
+              return null;
+            },
+            decoration: InputDecoration(icon: Icon(Icons.lock), border: UnderlineInputBorder(), labelText: 'Enter your password'),
+          ),
+          TextFormField(
+            controller: _passwordConfirmField,
             // The validator receives the text that the user has entered.
             validator: (value) {
               if (value == null || value.isEmpty) {
