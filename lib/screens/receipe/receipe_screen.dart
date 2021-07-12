@@ -69,8 +69,11 @@ class ReceipeDetail extends StatelessWidget {
           ),
         ),
         Container(
+          padding: EdgeInsets.only(
+            top: 10,
+            bottom: 10,
+          ),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16.0),
             color: Colors.white,
           ),
           child: Row(
