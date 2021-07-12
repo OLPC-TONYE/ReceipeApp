@@ -26,7 +26,10 @@ class AuthPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(26.0),
                 color: Colors.white60,
               ),
-              child: TextField(),
+              child: Padding(
+                padding: EdgeInsets.only(left: 10, right: 10, top: 5),
+                child: TextField(),
+              ),
             ),
           ],
         ),
