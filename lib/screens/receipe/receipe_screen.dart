@@ -113,6 +113,7 @@ class ReceipeDetail extends StatelessWidget {
         ),
         Container(
           width: MediaQuery.of(context).size.width,
+          height: double.infinity,
           decoration: BoxDecoration(
             color: Colors.blueGrey,
           ),
