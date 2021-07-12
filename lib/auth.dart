@@ -46,6 +46,25 @@ class AuthPage extends StatelessWidget {
                 ),
               ),
             ),
+            Container(
+              margin: EdgeInsets.only(top: 20),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(26.0),
+                color: Colors.white60,
+              ),
+              child: Padding(
+                padding: EdgeInsets.only(left: 10, right: 10, top: 5),
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Email e.g example@gmail.com',
+                    contentPadding: EdgeInsets.symmetric(
+                      vertical: 20,
+                      horizontal: 10,
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
