@@ -37,34 +37,6 @@ class ReceipeDetail extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-        SizedBox(
-          height: MediaQuery.of(context).size.height * 0.55,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: <Widget>[
-              Expanded(
-                child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 30),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      Align(
-                        alignment: Alignment.topLeft,
-                        child: IconButton(
-                          icon: Image.asset("assets/icons/back_arrow.png"),
-                          onPressed: () {
-                            Navigator.pop(context);
-                          },
-                        ),
-                      ),
-                      Spacer(),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
         Container(
           height: MediaQuery.of(context).size.height * 0.55,
           width: MediaQuery.of(context).size.width * 0.75,
@@ -86,7 +58,14 @@ class ReceipeDetail extends StatelessWidget {
             ),
           ),
           child: Stack(
-            children: <Widget>[],
+            children: <Widget>[
+              IconButton(
+                icon: Image.asset("assets/icons/back_arrow.png"),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+              ),
+            ],
           ),
         ),
         Text("FlutLab is on your service!"),
