@@ -27,6 +27,7 @@ class AuthPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16.0),
                 color: Colors.white60,
               ),
+              child: TextField(),
             ),
             Icon(Icons.mood),
           ],
