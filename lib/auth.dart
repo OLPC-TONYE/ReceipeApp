@@ -28,6 +28,7 @@ class AuthPage extends StatelessWidget {
               ),
             ),
             Container(
+              margin: EdgeInsets.only(top: 20),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(26.0),
                 color: Colors.white60,
