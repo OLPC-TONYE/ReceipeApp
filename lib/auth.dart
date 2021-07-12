@@ -20,7 +20,7 @@ class AuthPage extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
-            Text("FlutLab is on your service!"),
+            Text("Sign Up"),
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(26.0),
