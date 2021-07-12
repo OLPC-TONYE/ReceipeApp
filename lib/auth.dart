@@ -21,7 +21,7 @@ class AuthPage extends StatelessWidget {
             appBar: AppBar(
               bottom: TabBar(
                 tabs: [
-                  Tab(semanticLabel: SignUp),
+                  Tab(icon: Icon(Icons.directions_car)),
                   Tab(icon: Icon(Icons.directions_bike)),
                 ],
               ),
@@ -55,6 +55,15 @@ class _SignUpFormState extends State<SignUpForm> {
       child: Column(
         children: <Widget>[
           // Add TextFormFields and ElevatedButton here.
+          TextFormField(
+            // The validator receives the text that the user has entered.
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return 'Please enter some text';
+              }
+              return null;
+            },
+          ),
         ],
       ),
     );
