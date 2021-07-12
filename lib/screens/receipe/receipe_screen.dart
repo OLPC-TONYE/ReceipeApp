@@ -119,6 +119,7 @@ class ReceipeDetail extends StatelessWidget {
             children: <Widget>[
               FlatButton(
                 color: Colors.blue,
+                child: Text("Ingredients"),
               ),
               Icon(Icons.mood),
             ],
