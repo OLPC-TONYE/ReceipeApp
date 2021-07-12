@@ -23,12 +23,11 @@ class AuthPage extends StatelessWidget {
             Text("FlutLab is on your service!"),
             Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16.0),
+                borderRadius: BorderRadius.circular(26.0),
                 color: Colors.white60,
               ),
               child: TextField(),
             ),
-            Icon(Icons.mood),
           ],
         ),
       ),
