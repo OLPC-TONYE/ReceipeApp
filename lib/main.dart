@@ -31,7 +31,7 @@ class ReceipeApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.lightBlue.shade50,
-          primaryColor: Colors.red,
+          primaryColor: Colors.blueGrey,
         ),
         home: MainScreen(),
       ),
