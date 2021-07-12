@@ -22,7 +22,7 @@ class ReceipeApp extends StatelessWidget {
       providers: [
         StreamProvider<FirebaseUser>.value(
           stream: FirebaseAuth.instance.onAuthStateChanged,
-        ),
+        )
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
