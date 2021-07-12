@@ -133,7 +133,16 @@ class ReceipeDetail extends StatelessWidget {
                     ),
                   ),
                 ),
-                Icon(Icons.mood),
+                Padding(
+                  padding: EdgeInsets.only(top: 10),
+                  child: Text(
+                    "Instructions",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
