@@ -67,7 +67,7 @@ class _SignUpFormState extends State<SignUpForm> {
           ElevatedButton(
             onPressed: () {
               // Validate returns true if the form is valid, or false otherwise.
-              if (_formKey.currentState!.validate()) {
+              if (_formKey.currentState.validate()) {
                 // If the form is valid, display a snackbar. In the real world,
                 // you'd often call a server or save the information in a database.
                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Processing Data')));
