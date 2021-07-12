@@ -65,6 +65,21 @@ class _SignUpFormState extends State<SignUpForm> {
             },
             decoration: InputDecoration(icon: Icon(Icons.email_outlined), border: UnderlineInputBorder(), labelText: 'Enter your username'),
           ),
+          TextFormField(
+            // The validator receives the text that the user has entered.
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return 'Please enter some text';
+              }
+              return null;
+            },
+            decoration: InputDecoration(
+                icon: Icon(
+                  Icons.password_outlined,
+                ),
+                border: UnderlineInputBorder(),
+                labelText: 'Enter your username'),
+          ),
           ElevatedButton(
             onPressed: () {
               // Validate returns true if the form is valid, or false otherwise.
