@@ -25,7 +25,7 @@ class AuthPage extends StatelessWidget {
               style: TextStyle(
                 fontWeight: FontWeight.w500,
               ),
-              size: 35,
+              fontSize: 35,
             ),
             Container(
               decoration: BoxDecoration(
