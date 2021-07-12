@@ -69,25 +69,26 @@ class ReceipeDetail extends StatelessWidget {
           ),
         ),
         Container(
-          padding: EdgeInsets.only(
-            top: 10,
-            bottom: 10,
-          ),
+          padding: EdgeInsets.only(top: 10, bottom: 10),
           decoration: BoxDecoration(
             color: Colors.white,
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              Image(
-                image: AssetImage("assets/icons/hourglass.png"),
-                width: 30,
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Image(
+                    image: AssetImage("assets/icons/hourglass.png"),
+                    width: 30,
+                  ),
+                  Text("Cook Time"),
+                ],
               ),
             ],
           ),
         ),
-        Text("FlutLab is on your service!"),
-        Icon(Icons.mood),
       ],
     );
   }
