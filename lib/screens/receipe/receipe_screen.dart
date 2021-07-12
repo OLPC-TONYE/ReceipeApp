@@ -111,12 +111,18 @@ class ReceipeDetail extends StatelessWidget {
             ],
           ),
         ),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text("FlutLab is on your service!"),
-            Icon(Icons.mood),
-          ],
+        Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16.0),
+            color: Colors.lightBlue,
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text("FlutLab is on your service!"),
+              Icon(Icons.mood),
+            ],
+          ),
         ),
       ],
     );
