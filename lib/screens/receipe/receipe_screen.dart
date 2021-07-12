@@ -115,24 +115,27 @@ class ReceipeDetail extends StatelessWidget {
             ],
           ),
         ),
-        Container(
-          width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(top: 10),
-                child: Text(
-                  "Ingredients",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
+        SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            decoration: BoxDecoration(),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.only(top: 10),
+                  child: Text(
+                    "Ingredients",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
-              ),
-              Icon(Icons.mood),
-            ],
+                Icon(Icons.mood),
+              ],
+            ),
           ),
         ),
       ],
