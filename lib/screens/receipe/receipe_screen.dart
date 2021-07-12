@@ -129,7 +129,7 @@ class ReceipeDetail extends StatelessWidget {
                     "Ingredients",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 25,
                     ),
                   ),
                 ),
@@ -139,7 +139,7 @@ class ReceipeDetail extends StatelessWidget {
                     "Instructions",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 25,
                     ),
                   ),
                 ),
