@@ -44,7 +44,7 @@ class ReceipeDetail extends StatelessWidget {
             children: <Widget>[
               Expanded(
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 30),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
