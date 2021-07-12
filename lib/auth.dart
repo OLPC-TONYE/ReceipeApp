@@ -38,7 +38,7 @@ class SignUpPage extends StatelessWidget {
           ),
         ),
         Container(
-          margin: EdgeInsets.only(top: 20),
+          margin: EdgeInsets.only(top: 10),
           width: MediaQuery.of(context).size.width * 0.85,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(26.0),
