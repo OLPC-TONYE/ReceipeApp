@@ -24,8 +24,8 @@ class AuthPage extends StatelessWidget {
               "Sign Up",
               style: TextStyle(
                 fontWeight: FontWeight.w500,
+                fontSize: 35,
               ),
-              fontSize: 35,
             ),
             Container(
               decoration: BoxDecoration(
