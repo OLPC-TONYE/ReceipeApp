@@ -96,7 +96,7 @@ class _SignUpFormState extends State<SignUpForm> {
                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Signing Up")));
                 try {
                   UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
-                    email: "barry.allen@example.com",
+                    email: _usernameField.text,
                     password: "SuperSecretPassword!",
                   );
                 } on FirebaseAuthException catch (e) {
