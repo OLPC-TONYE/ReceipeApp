@@ -48,6 +48,16 @@ class SignUpForm extends StatefulWidget {
 class _SignUpFormState extends State<SignUpForm> {
   final _formKey = GlobalKey<FormState>();
 
+  final _usernameField = TextEditingController();
+  final _passwordField = TextEditingController();
+
+  @override
+  void dispose() {
+    // Clean up the controller when the widget is disposed.
+    myController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -56,6 +66,7 @@ class _SignUpFormState extends State<SignUpForm> {
         children: <Widget>[
           // Add TextFormFields and ElevatedButton here.
           TextFormField(
+            controller: _usernameField,
             // The validator receives the text that the user has entered.
             validator: (value) {
               if (value == null || value.isEmpty) {
@@ -73,7 +84,7 @@ class _SignUpFormState extends State<SignUpForm> {
               }
               return null;
             },
-            decoration: InputDecoration(icon: Icon(Icons.lock), border: UnderlineInputBorder(), labelText: 'Enter your username'),
+            decoration: InputDecoration(icon: Icon(Icons.lock), border: UnderlineInputBorder(), labelText: 'Enter your password'),
           ),
           ElevatedButton(
             onPressed: () {
@@ -81,7 +92,7 @@ class _SignUpFormState extends State<SignUpForm> {
               if (_formKey.currentState.validate()) {
                 // If the form is valid, display a snackbar. In the real world,
                 // you'd often call a server or save the information in a database.
-                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Processing Data')));
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(_usernameField.text)));
               }
             },
             child: Text('Submit'),
