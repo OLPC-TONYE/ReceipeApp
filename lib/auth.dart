@@ -31,7 +31,8 @@ class AuthPage extends StatelessWidget {
                 child: TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    hintText: 'Enter a search term',
+                    errorText: 'Error Text',
+                    hintText: 'Email e.g example@gmail.com',
                   ),
                 ),
               ),
