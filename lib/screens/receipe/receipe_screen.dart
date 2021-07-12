@@ -73,7 +73,7 @@ class ReceipeDetail extends StatelessWidget {
           children: <Widget>[
             Image(
               image: AssetImage("assets/icons/hourglass.png"),
-              width: 23,
+              width: 30,
             ),
           ],
         ),
