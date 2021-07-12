@@ -15,7 +15,7 @@ class AuthPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SignUp or Login'),
+        title: Text('SignUp or Login', textAlign: TextAlign.center),
       ),
       body: Center(
         child: Text(
