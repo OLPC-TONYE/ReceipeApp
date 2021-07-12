@@ -105,7 +105,7 @@ class ReceipeDetail extends StatelessWidget {
                     image: AssetImage("assets/icons/bookmark2.png"),
                     width: 30,
                   ),
-                  Text("Save"),
+                  Text("Not Saved"),
                 ],
               ),
             ],
