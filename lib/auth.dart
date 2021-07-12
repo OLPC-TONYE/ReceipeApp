@@ -14,9 +14,6 @@ class AuthPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('SignUp or Login', textAlign: TextAlign.center),
-      ),
       body: Center(
         child: DefaultTabController(
           length: 3,
@@ -29,7 +26,7 @@ class AuthPage extends StatelessWidget {
                   Tab(icon: Icon(Icons.directions_bike)),
                 ],
               ),
-              title: Text('Tabs Demo'),
+              title: Text('Sign Up/Login'),
             ),
             body: TabBarView(
               children: [
