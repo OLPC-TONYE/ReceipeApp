@@ -80,6 +80,7 @@ class SignUpPage extends StatelessWidget {
             ),
           ),
         ),
+        TextButton(child: Text("Sign Up")),
       ],
     );
   }
