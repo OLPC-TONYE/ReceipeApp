@@ -18,58 +18,65 @@ class AuthPage extends StatelessWidget {
         title: Text('SignUp or Login', textAlign: TextAlign.center),
       ),
       body: Center(
-        child: Column(
-          children: <Widget>[
-            Text(
-              "Sign Up",
-              style: TextStyle(
-                fontWeight: FontWeight.w500,
-                fontSize: 35,
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.only(top: 20),
-              width: MediaQuery.of(context).size.width * 0.85,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(26.0),
-                color: Colors.white60,
-              ),
-              child: Padding(
-                padding: EdgeInsets.only(left: 10, right: 10, top: 5),
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Email e.g example@gmail.com',
-                    contentPadding: EdgeInsets.symmetric(
-                      vertical: 20,
-                      horizontal: 10,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.only(top: 20),
-              width: MediaQuery.of(context).size.width * 0.85,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(26.0),
-                color: Colors.white60,
-              ),
-              child: Padding(
-                padding: EdgeInsets.only(left: 10, right: 10, top: 5),
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Password',
-                    contentPadding: EdgeInsets.symmetric(
-                      vertical: 20,
-                      horizontal: 10,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
+        child: SignUpPage(),
       ),
+    );
+  }
+}
+
+class SignUpPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+        Text(
+          "Sign Up",
+          style: TextStyle(
+            fontWeight: FontWeight.w500,
+            fontSize: 35,
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.only(top: 20),
+          width: MediaQuery.of(context).size.width * 0.85,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(26.0),
+            color: Colors.white60,
+          ),
+          child: Padding(
+            padding: EdgeInsets.only(left: 10, right: 10, top: 5),
+            child: TextField(
+              decoration: InputDecoration(
+                hintText: 'Email e.g example@gmail.com',
+                contentPadding: EdgeInsets.symmetric(
+                  vertical: 20,
+                  horizontal: 10,
+                ),
+              ),
+            ),
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.only(top: 20),
+          width: MediaQuery.of(context).size.width * 0.85,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(26.0),
+            color: Colors.white60,
+          ),
+          child: Padding(
+            padding: EdgeInsets.only(left: 10, right: 10, top: 5),
+            child: TextField(
+              decoration: InputDecoration(
+                hintText: 'Password',
+                contentPadding: EdgeInsets.symmetric(
+                  vertical: 20,
+                  horizontal: 10,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
