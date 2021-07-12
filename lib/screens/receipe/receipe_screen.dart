@@ -71,7 +71,9 @@ class ReceipeDetail extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Image.asset("assets/icons/hourglass.png"),
+            Image(
+              image: Image.asset("assets/icons/hourglass.png"),
+            ),
           ],
         ),
         Text("FlutLab is on your service!"),
