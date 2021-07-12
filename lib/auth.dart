@@ -18,8 +18,12 @@ class AuthPage extends StatelessWidget {
         title: Text('SignUp or Login', textAlign: TextAlign.center),
       ),
       body: Center(
-        child: Text(
-          'Text',
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            Text("FlutLab is on your service!"),
+            Icon(Icons.mood),
+          ],
         ),
       ),
     );
