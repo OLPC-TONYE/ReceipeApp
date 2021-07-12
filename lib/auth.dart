@@ -30,8 +30,6 @@ class AuthPage extends StatelessWidget {
                 padding: EdgeInsets.only(left: 10, right: 10, top: 5),
                 child: TextField(
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    errorText: 'Error Text',
                     hintText: 'Email e.g example@gmail.com',
                   ),
                 ),
