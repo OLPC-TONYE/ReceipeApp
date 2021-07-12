@@ -62,31 +62,31 @@ class ReceipeDetail extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                height: MediaQuery.of(context).size.height * 0.55,
-                width: MediaQuery.of(context).size.width * 0.75,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    alignment: Alignment.centerRight,
-                    image: NetworkImage(imageUrl),
-                    fit: BoxFit.cover,
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      offset: Offset(0, 0),
-                      blurRadius: 12,
-                    ),
-                  ],
-                  borderRadius: BorderRadius.only(
-                    // topLeft: Radius.circular(63),
-                    bottomLeft: Radius.circular(63),
-                  ),
-                ),
-                child: Stack(
-                  children: <Widget>[],
-                ),
+            ],
+          ),
+        ),
+        Container(
+          height: MediaQuery.of(context).size.height * 0.55,
+          width: MediaQuery.of(context).size.width * 0.75,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              alignment: Alignment.centerRight,
+              image: NetworkImage(imageUrl),
+              fit: BoxFit.cover,
+            ),
+            boxShadow: [
+              BoxShadow(
+                offset: Offset(0, 0),
+                blurRadius: 12,
               ),
             ],
+            borderRadius: BorderRadius.only(
+              // topLeft: Radius.circular(63),
+              bottomLeft: Radius.circular(63),
+            ),
+          ),
+          child: Stack(
+            children: <Widget>[],
           ),
         ),
         Text("FlutLab is on your service!"),
