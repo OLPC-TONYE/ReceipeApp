@@ -8,6 +8,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
+import 'package:receipeapp/auth.dart';
+
 import 'package:receipeapp/components/custom_widgets.dart';
 
 import 'package:receipeapp/screens/home/home_screen.dart';
@@ -39,13 +41,13 @@ class _MainScreenState extends State<MainScreen> {
     var user = context.watch<User>();
     if (user == null) {
       print('User is currently signed out!');
+      return AuthPage();
     } else {
       print('User is signed in!');
+      return Scaffold(
+        body: HomeScreen(),
+        bottomNavigationBar: BottomAppNavBar(),
+      );
     }
-
-    return Scaffold(
-      body: HomeScreen(),
-      bottomNavigationBar: BottomAppNavBar(),
-    );
   }
 }
