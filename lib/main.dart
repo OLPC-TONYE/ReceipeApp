@@ -13,7 +13,6 @@ import 'package:receipeapp/components/main_screen.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-
   runApp(ReceipeApp());
 }
 
