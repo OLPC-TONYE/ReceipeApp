@@ -20,7 +20,13 @@ class AuthPage extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
-            Text("Sign Up"),
+            Text(
+              "Sign Up",
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+              ),
+              size: 35,
+            ),
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(26.0),
