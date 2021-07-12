@@ -117,7 +117,7 @@ class ReceipeDetail extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              FlatButton(
+              TextButton(
                 color: Colors.blue,
                 child: Text("Ingredients"),
               ),
