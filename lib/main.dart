@@ -17,12 +17,6 @@ void main() {
 }
 
 class ReceipeApp extends StatelessWidget {
-  Future<void> initializeDefault() async {
-    app = Firebase.app();
-    assert(app != null);
-    print('Initialized default app $app');
-  }
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
