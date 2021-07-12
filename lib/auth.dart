@@ -93,12 +93,14 @@ class _SignUpFormState extends State<SignUpForm> {
               if (_formKey.currentState.validate()) {
                 // If the form is valid, display a snackbar. In the real world,
                 // you'd often call a server or save the information in a database.
-                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Signing Up")));
+
                 try {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Signing Up")));
                   UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
                     email: _usernameField.text,
                     password: "SuperSecretPassword!",
                   );
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Signed In")));
                 } on FirebaseAuthException catch (e) {
                   if (e.code == 'weak-password') {
                     print('The password provided is too weak.');
