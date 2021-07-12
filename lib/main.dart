@@ -10,7 +10,7 @@ import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 import 'package:receipeapp/screens/home/home_screen.dart';
 import 'package:receipeapp/components/main_screen.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(ReceipeApp());
