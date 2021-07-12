@@ -11,8 +11,6 @@ import 'package:receipeapp/screens/home/home_screen.dart';
 import 'package:receipeapp/components/main_screen.dart';
 
 void main() {
-  // WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
   runApp(ReceipeApp());
 }
 
@@ -20,20 +18,13 @@ class ReceipeApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        StreamProvider<FirebaseUser>.value(
-          stream: FirebaseAuth.instance.onAuthStateChanged,
-        ),
-      ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          scaffoldBackgroundColor: Colors.lightBlue.shade50,
-          primaryColor: Colors.red,
-        ),
-        home: MainScreen(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.lightBlue.shade50,
+        primaryColor: Colors.red,
       ),
+      home: MainScreen(),
     );
   }
 }
