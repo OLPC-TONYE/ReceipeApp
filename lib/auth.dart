@@ -28,7 +28,12 @@ class AuthPage extends StatelessWidget {
               ),
               child: Padding(
                 padding: EdgeInsets.only(left: 10, right: 10, top: 5),
-                child: TextField(),
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Enter a search term',
+                  ),
+                ),
               ),
             ),
           ],
