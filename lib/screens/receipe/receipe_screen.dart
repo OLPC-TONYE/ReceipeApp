@@ -86,6 +86,26 @@ class ReceipeDetail extends StatelessWidget {
                   Text("Cook Time"),
                 ],
               ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Image(
+                    image: AssetImage("assets/icons/heart.png"),
+                    width: 30,
+                  ),
+                  Text("Likes"),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Image(
+                    image: AssetImage("assets/icons/bookmark2.png"),
+                    width: 30,
+                  ),
+                  Text("Save"),
+                ],
+              ),
             ],
           ),
         ),
