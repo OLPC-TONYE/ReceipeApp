@@ -16,13 +16,12 @@ class AuthPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: DefaultTabController(
-          length: 3,
+          length: 2,
           child: Scaffold(
             appBar: AppBar(
               bottom: TabBar(
                 tabs: [
                   Tab(icon: Icon(Icons.directions_car)),
-                  Tab(icon: Icon(Icons.directions_transit)),
                   Tab(icon: Icon(Icons.directions_bike)),
                 ],
               ),
@@ -31,7 +30,6 @@ class AuthPage extends StatelessWidget {
             body: TabBarView(
               children: [
                 Icon(Icons.directions_car),
-                Icon(Icons.directions_transit),
                 Icon(Icons.directions_bike),
               ],
             ),
