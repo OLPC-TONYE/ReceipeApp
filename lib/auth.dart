@@ -32,7 +32,8 @@ class AuthPage extends StatelessWidget {
                   decoration: InputDecoration(
                     hintText: 'Email e.g example@gmail.com',
                     contentPadding: EdgeInsets.symmetric(
-                      vertical: 20,horizontal: 10;
+                      vertical: 20,
+                      horizontal: 10,
                     ),
                   ),
                 ),
