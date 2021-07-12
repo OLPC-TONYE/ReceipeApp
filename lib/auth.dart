@@ -45,7 +45,10 @@ class SignUpPage extends StatelessWidget {
             color: Colors.white60,
           ),
           child: Padding(
-            padding: EdgeInsets.only(left: 10, right: 10, top: 5),
+            padding: EdgeInsets.only(
+              left: 10,
+              right: 10,
+            ),
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Email e.g example@gmail.com',
