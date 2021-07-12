@@ -18,13 +18,20 @@ class ReceipeApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.lightBlue.shade50,
-        primaryColor: Colors.red,
+    return MultiProvider(
+      providers: [
+        StreamProvider<FirebaseUser>.value(
+          stream: FirebaseAuth.instance.onAuthStateChanged,
+        ),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          scaffoldBackgroundColor: Colors.lightBlue.shade50,
+          primaryColor: Colors.red,
+        ),
+        home: MainScreen(),
       ),
-      home: MainScreen(),
     );
   }
 }
