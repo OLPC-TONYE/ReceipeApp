@@ -63,7 +63,7 @@ class _SignUpFormState extends State<SignUpForm> {
               }
               return null;
             },
-            decoration: InputDecoration(icon: Icons(Icons.email), border: UnderlineInputBorder(), labelText: 'Enter your username'),
+            decoration: InputDecoration(icon: Icon(Icons.email_outlined), border: UnderlineInputBorder(), labelText: 'Enter your username'),
           ),
           ElevatedButton(
             onPressed: () {
