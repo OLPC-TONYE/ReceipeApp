@@ -29,12 +29,33 @@ class AuthPage extends StatelessWidget {
             ),
             body: TabBarView(
               children: [
-                Icon(Icons.directions_car),
+                SignUpForm(),
                 Icon(Icons.directions_bike),
               ],
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+class SignUpForm extends StatefulWidget {
+  @override
+  _SignUpFormState createState() => _SignUpFormState();
+}
+
+class _SignUpFormState extends State<SignUpForm> {
+  final _formKey = GlobalKey<FormState>();
+
+  @override
+  Widget build(BuildContext context) {
+    return Form(
+      key: _formKey,
+      child: Column(
+        children: <Widget>[
+          // Add TextFormFields and ElevatedButton here.
+        ],
       ),
     );
   }
