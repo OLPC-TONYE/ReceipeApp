@@ -44,11 +44,14 @@ class ReceipeDetail extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  IconButton(
-                    icon: Image.asset("assets/icons/back_arrow.png"),
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: IconButton(
+                      icon: Image.asset("assets/icons/back_arrow.png"),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    ),
                   ),
                 ],
               ),
