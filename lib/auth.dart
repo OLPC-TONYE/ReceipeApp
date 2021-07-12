@@ -98,7 +98,7 @@ class _SignUpFormState extends State<SignUpForm> {
               }
               return null;
             },
-            decoration: InputDecoration(icon: Icon(Icons.lock), border: UnderlineInputBorder(), labelText: 'Enter your password'),
+            decoration: InputDecoration(icon: Icon(Icons.lock), border: UnderlineInputBorder(), labelText: 'Confirm your password'),
           ),
           ElevatedButton(
             onPressed: () async {
