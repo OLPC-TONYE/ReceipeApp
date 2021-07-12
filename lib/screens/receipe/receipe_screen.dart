@@ -43,20 +43,23 @@ class ReceipeDetail extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               Expanded(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: <Widget>[
-                    Align(
-                      alignment: Alignment.topLeft,
-                      child: IconButton(
-                        icon: Image.asset("assets/icons/back_arrow.png"),
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
+                child: Padding(
+                  padding: EdgeInsets.symmetric(vertical: 10),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: <Widget>[
+                      Align(
+                        alignment: Alignment.topLeft,
+                        child: IconButton(
+                          icon: Image.asset("assets/icons/back_arrow.png"),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                        ),
                       ),
-                    ),
-                    Spacer(),
-                  ],
+                      Spacer(),
+                    ],
+                  ),
                 ),
               ),
               Container(
