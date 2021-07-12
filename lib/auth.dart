@@ -19,7 +19,7 @@ class AuthPage extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text("FlutLab is on your service!"),
             Icon(Icons.mood),
