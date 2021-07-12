@@ -39,7 +39,7 @@ class ReceipeDetail extends StatelessWidget {
       children: <Widget>[
         Container(
           height: MediaQuery.of(context).size.height * 0.55,
-          width: MediaQuery.of(context).size.width * 0.75,
+          width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
             image: DecorationImage(
               alignment: Alignment.centerRight,
