@@ -59,11 +59,15 @@ class ReceipeDetail extends StatelessWidget {
           ),
           child: Stack(
             children: <Widget>[
-              IconButton(
-                icon: Image.asset("assets/icons/back_arrow.png"),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
+              Positioned(
+                top: 20,
+                left: 25,
+                child: IconButton(
+                  icon: Image.asset("assets/icons/back_arrow.png"),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
               ),
             ],
           ),
@@ -117,7 +121,7 @@ class ReceipeDetail extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              TextButton(
+              FlatButton(
                 color: Colors.blue,
                 child: Text("Ingredients"),
               ),
