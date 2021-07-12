@@ -77,6 +77,7 @@ class _SignUpFormState extends State<SignUpForm> {
             decoration: InputDecoration(icon: Icon(Icons.email_outlined), border: UnderlineInputBorder(), labelText: 'Enter your username'),
           ),
           TextFormField(
+            controller: _passwordField,
             // The validator receives the text that the user has entered.
             validator: (value) {
               if (value == null || value.isEmpty) {
@@ -92,7 +93,7 @@ class _SignUpFormState extends State<SignUpForm> {
               if (_formKey.currentState.validate()) {
                 // If the form is valid, display a snackbar. In the real world,
                 // you'd often call a server or save the information in a database.
-                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(_usernameField.text)));
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(_usernameField.text + _passwordField.text)));
               }
             },
             child: Text('Submit'),
