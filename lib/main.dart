@@ -22,9 +22,10 @@ class ReceipeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        StreamProvider<User>.value(
-          stream: FirebaseAuth.instance.authStateChanges,
-        )
+        StreamProvider.value<User?>(
+          initialValue: null,
+          create: (context) => Future.value(42),
+        ),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
